@@ -1,3 +1,4 @@
+
 Install rvm
 -------------
 ```bash
@@ -6,6 +7,7 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 
 # Вбиваем:
 type rvm | head -1
+source ~/.zlogin
 
 # Если не видим rvm is a shell function, то
 echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.zlogin
@@ -22,9 +24,6 @@ rvm get head
 
 #Подготовка и установка:
 rvm requirements
-brew update
-brew install libksba проверить, надо ли
-
 
 rvm pkg install openssl
 rvm install 1.9.3 # илиa rvm reinstall all --force если у вас уже установлен Ruby)
@@ -41,7 +40,11 @@ ruby -v
 
 Install python
 ------------
-$ brew install readline sqlite gdbm
+$ brew install readline gdbm sqlite --universal
+if >> python dependency sqlite not installed with: --universal
+  brew remove sqlite
+	brew install sqlite --universal
+
 $ brew install python --universal --framework
 [Why with the framework and universal links](http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/#python)
 
@@ -52,7 +55,9 @@ Python 2.7.5
 $ mkdir ~/Frameworks
 $ ln -s "/usr/local/Cellar/python/2.7.5/Frameworks/Python.framework" ~/Frameworks
 
-$ curl -O http://python-distribute.org/distribute_setup.py $ python distribute_setup.py $ easy_install pip
+$ curl -O http://python-distribute.org/distribute_setup.py
+$ python distribute_setup.py
+$ easy_install pip
 $ pip install distribute
 
 
@@ -83,15 +88,8 @@ $ mkvirtualenv test
 $ rmvirtualenv test
 
 
-
-
-
 Install Node.js [Directions](http://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/)
 ------------------------
 ```bash
 brew install node
-
-# Add /usr/local/share/npm/bin to your path
-```
-Сообщить автору, Npm уже устанавливается вместе с Нодой из Хоумбрю.
- npm install grunt-cli -g
+npm install grunt-cli -g

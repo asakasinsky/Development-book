@@ -1,3 +1,18 @@
+#Homebrew
+
+```bash
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+```
+[Homebrew](http://mxcl.github.com/homebrew/)
+
+brew update
+brew tap homebrew/dupes
+
+brew install mc ack wget curl pkg-config  ffmpeg autoconf automake apple-gcc42
+
+sudo ln -s /usr/local/bin/gcc-4.2 /usr/bin/gcc-4.2
+
+
 
 # Apps
 

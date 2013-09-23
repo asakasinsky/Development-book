@@ -1,10 +1,3 @@
-#Homebrew
-
-```bash
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-```
-[Homebrew](http://mxcl.github.com/homebrew/)
-
 Install Git
 ------------
 ```bash
@@ -85,18 +78,9 @@ Thumbs.db
 
 npm install jshint -g
 pip install pudb
-brew update
-brew tap homebrew/dupes
 
-brew install  ctags
-brew install imagesnap
-brew install gource
 
-brew install mc ack wget curl memcached libmemcached pkg-config  ffmpeg 
-
-brew install autoconf automake apple-gcc42
-sudo ln -s /usr/local/bin/gcc-4.2 /usr/bin/gcc-4.2
-
+brew install ctags imagesnap gource
 
 
 ## Эмуляция медленного канала
