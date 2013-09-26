@@ -1,104 +1,98 @@
-#Homebrew
+## [Homebrew](http://mxcl.github.com/homebrew/)
 
-```bash
+``` bash
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-```
-[Homebrew](http://mxcl.github.com/homebrew/)
 
 brew update
 brew tap homebrew/dupes
-
 brew install mc ack wget curl pkg-config  ffmpeg autoconf automake apple-gcc42
-
 sudo ln -s /usr/local/bin/gcc-4.2 /usr/bin/gcc-4.2
-
+```
 
 
 # Apps
 
+
+### System
+* [XQuartz (X11)](http://xquartz.macosforge.org/trac/wiki) <code>sudo ln -s /opt/X11 /usr/X11</code>
+* [Java](http://www.java.com/en/download/mac_download.jsp?locale=en)
+* [Xcode](https://developer.apple.com/xcode/)  
+
+__Network Link Conditioner Tool:__ Xcode > Open Developer Tool > More Developer Tools... and get "Hardware IO Tools for Xcode".  
+
+Xcode > Preferences > Downloads > __Command Line Tools__  
+Xcode > Preferences > Downloads > __iOS * Simulator__
+
+
+### Browsers
 * [Chrome](https://www.google.com/intl/en/chrome/browser/)
 * [Firefox](http://www.mozilla.org/en-US/firefox/beta/)
 * [Chrome Canary](https://www.google.com/intl/en/chrome/browser/canary.html)
 * [Opera](http://www.opera.com/en/)
 * [Opera Mobile Emulator](http://www.opera.com/en/developer/mobile-emulator)
+
+### Virtualisation
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads)
+
+### Markdown
 * [Mou](http://mouapp.com)
-* [Spark](http://www.shadowlab.org/softwares/spark.php)
-* [Developer Color Picker](http://panic.com/~wade/picker/)
-
-
-[Dash App http://kapeli.com/dash]()
-
-
 * [Marked](http://markedapp.com)
 * [Marked Bonus Pack (I use Services and Sublime Text 2 build script)](http://support.markedapp.com/kb/how-to-tips-and-tricks/marked-bonus-pack-scripts-commands-and-bundles)
-* [Markdown Spotlight Plugin](http://brettterpstra.com/2011/10/18/fixing-spotlight-indexing-of-markdown-content/)
-* [nvALT](http://brettterpstra.com/projects/nvalt/)
-* [nvALT Browser Extensions](http://elasticthreads.tumblr.com/post/8212672178/nvit-chrome-and-safari-extensions-for-nvalt)
-* [nvTagNavigator1.1](http://brettterpstra.com/2013/02/15/nvtagnavigator-a-tag-panel-for-nvalt/)
 
+
+### Required apps
+* [Sublime Text 3](http://www.sublimetext.com/)
 * [iTerm 2](http://iterm2.com/)
 * [RESTed](https://itunes.apple.com/us/app/rested-simple-http-requests/id421879749)
-* [Sublime Text 3](http://www.sublimetext.com/)
-* [Xcode](https://developer.apple.com/xcode/)
-* [Dropbox](https://www.dropbox.com/)
+* [Dash App http://kapeli.com/dash]()
 * [FileZilla](https://filezilla-project.org/download.php?type=client)
 * [ImageOptim](http://imageoptim.com)
 * [ImageAlpha](http://pngmini.com)
+* [Developer Color Picker](http://panic.com/~wade/picker/)
 
-* [XQuartz (X11)](http://xquartz.macosforge.org/trac/wiki)
-sudo ln -s /opt/X11 /usr/X11
-
-* [Better Touch Tool](http://blog.boastr.net/?page_id=1722)
-* [f.lux](http://stereopsis.com/flux/)
-* [Unarchiver](http://download.cnet.com/The-Unarchiver/3000-2250_4-10655313.html)
-* [Evernote without AppStore](http://www.macupdate.com/app/mac/27456/evernote)
-
+### MySQL
 * [Sequel Pro](http://www.sequelpro.com/download)
 * [MySQL Workbench](http://www.mysql.com/products/workbench/)
-* [TorBrowser](https://www.torproject.org/download/download-easy.html.en)
-* [Wireshark](http://www.wireshark.org/download.html)
+
+### Productivity
+* [nvALT](http://brettterpstra.com/projects/nvalt/)
+* [nvALT Browser Extensions](http://elasticthreads.tumblr.com/post/8212672178/nvit-chrome-and-safari-extensions-for-nvalt)
+* [Spark](http://www.shadowlab.org/softwares/spark.php)
+    * __Hotkeys Spark__
+    * ⌥ + Chrome Canary
+    * ⌥ + Sublime
+    * ⌥ + Chrome
+    * ⌥ + iTerm
+    * ⌥ + M Mail
+    * And you need install «Plain Clip Plug», for cleaning rich format text in a clipboard. Hotkey - ⌘+⇧+V check  «Send ⌘-V keystroke»
+* [Evernote without AppStore](http://www.macupdate.com/app/mac/27456/evernote)
 * [XMind](http://www.xmind.net/download/)
-* [Java](http://www.java.com/en/download/mac_download.jsp?locale=en)
+* [Day One](http://dayoneapp.com/)
+* [1Password](https://agilebits.com/onepassword)
+* [Asana App](http://fluidapp.com/)
+* [Pocket](https://itunes.apple.com/ru/app/pocket/id568494494)
+* [Twitter](https://itunes.apple.com/ru/app/twitter/id409789998)
+* [Calibre](http://calibre-ebook.com/download_osx)
+* [Skype](http://www.skype.com/)
+* [VLC](http://www.videolan.org/vlc/download-macosx.html)
+* [Adium](https://adium.im/)
+
+### Backups cloudstore
+* [Dropbox](https://www.dropbox.com/) (has a version history!)
+* [Yandex.Disk](https://itunes.apple.com/ru/app/andeks.disk/id560459030)
+
+
+### Useful tools
+* [Переlator](https://itunes.apple.com/ru/app/perelator/id422107942)
+* [Unarchiver](http://download.cnet.com/The-Unarchiver/3000-2250_4-10655313.html)
+* [Wireshark](http://www.wireshark.org/download.html)
+* [Better Touch Tool](http://blog.boastr.net/?page_id=1722)
+* [f.lux](http://stereopsis.com/flux/)
 * [AppCleaner](http://www.freemacsoft.net/appcleaner/)
+* [XLD](https://www.macupdate.com/app/mac/23430/x-lossless-decoder)
 
-
-Day One
-1Password
-Asana
-CCleaner
-Pocket
-Twitter
-XLD
-Переlator
-mysql-workbench-gpl
-dnscrypt-osx-clien
-calibre
-Yandex.Disk
-Skype
-vlc
-adium
-iLife
-
-
-XCODE
-Network Link Conditioner Tool  
-Xcode > Open Developer Tool > More Developer Tools...  
-and get "Hardware IO Tools for Xcode".  
-
-Xcode > Preferences > Downloads > Command Line Tools  
-Xcode > Preferences > Downloads > iOS * Simulator
-
-
-----------------
-
-Настройка Spark http://www.shadowlab.org/softwares/spark.php
-    option+1  Chrome Canary
-    option+2 Sublime
-    option+3 Chrome
-    option+4 iTerm
-    option+m Mail
-    Ставим плагин Plain Clip Plug, который очищает текст, находящийся в буфере обмена от форматирования. Назначаем хоткей   cmd+shift+v и поставим галочку Send ⌘-V keystroke
-
+### Privacy
+* [dnscrypt-osx-client](http://opendns.github.io/dnscrypt-osx-client/)
+* [TorBrowser](https://www.torproject.org/download/download-easy.html.en)
 
