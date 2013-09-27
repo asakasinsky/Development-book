@@ -80,7 +80,7 @@ npm install jshint -g
 pip install pudb
 
 
-brew install ctags imagesnap gource ghostscript imagemagick
+brew install ctags cmake imagesnap gource ghostscript imagemagick
 
 
 ## Эмуляция медленного канала
