@@ -1,6 +1,10 @@
 # OS X Preferences
-I don't use all of these, though they are very handy
 
+## Some system «hack»
+
+__Pay attention to а «Select Text in Quick Look» line. It can be very useful in your workflow.__  
+
+All (or one of this) you must enter in the Terminal App.
 
 ```bash
 
@@ -16,13 +20,16 @@ defaults write com.apple.finder ShowStatusBar -bool true
 #Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
-# Select Text in Quick Look 
+# Select Text in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE;
+```
 
-#Restart Finder when complete
+For the changes to take effect, you need input: 
+```bash
 killall Finder;
 ```
 
-Turn off rearrange spaces based on use
-----------------
+
+## Turn off «rearrange spaces based on use»
+
 System Preferences / Mission Control / "Automatically rearrange"->[ ]
