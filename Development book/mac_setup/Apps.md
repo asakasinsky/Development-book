@@ -93,4 +93,5 @@ Xcode > Preferences > Downloads > __iOS * Simulator__
 ## Privacy
 * [dnscrypt-osx-client](http://opendns.github.io/dnscrypt-osx-client/)
 * [TorBrowser](https://www.torproject.org/download/download-easy.html.en)
+* [GPG Suite](https://gpgtools.org/)
 
