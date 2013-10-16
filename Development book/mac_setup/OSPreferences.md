@@ -33,3 +33,10 @@ killall Finder;
 ## Turn off «rearrange spaces based on use»
 
 System Preferences / Mission Control / "Automatically rearrange"->[ ]
+
+## Speed up Mission Control animations
+
+```bash
+defaults write com.apple.dock expose-animation-duration -float 0.15
+killall Dock
+```
