@@ -42,29 +42,17 @@ Xcode > Preferences > Downloads > __iOS * Simulator__
 
 ## Required apps  
 [Sublime Text 3](http://www.sublimetext.com/)  
+Add symlink to sublime
+```bash
+open /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+```
 [iTerm 2](http://iterm2.com/)  
 [RESTed](https://itunes.apple.com/us/app/rested-simple-http-requests/id421879749)  
 [Dash App http://kapeli.com/dash]()  
 [FileZilla](https://filezilla-project.org/download.php?type=client)  
 [ImageOptim](http://imageoptim.com)  
 [ImageAlpha](http://pngmini.com)
-
-## Network speed limit  
-[Speed Limit](http://mschrag.github.io/)  
-
-__Network Link Conditioner Tool:__ Xcode > Open Developer Tool > More Developer Tools... and get "Hardware IO Tools for Xcode".  
-
-__Ipfw__ — out-the-box command line firewall:
-
-```bash  
-# Set rules  
-sudo ipfw pipe 1 config bw 128Kbit/s delay 200ms  
-sudo ipfw add 1 pipe 1 src-port 80
-
-# To remove all rules and recover your original network connection  
-sudo ipfw flush  
-```
-
 
 ## MySQL  
 [Sequel Pro](http://www.sequelpro.com/download)  
