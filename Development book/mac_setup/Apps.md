@@ -71,6 +71,7 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 ⌥ + 4 Dash  
 ⌥ + W nvALT  
 ⌥ + A Chrome Canary  
+⌥ + S Safari 
 ⌥ + Z Mail  
 And you need install «Plain Clip Plug», for cleaning rich format text in a clipboard.  
 Hotkey - ⌘+⇧+V check  «Send ⌘-V keystroke»  
