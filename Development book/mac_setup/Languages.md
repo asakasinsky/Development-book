@@ -1,95 +1,129 @@
+# Languages
 
-Install rvm
--------------
-```bash
-curl -L https://get.rvm.io | bash -s stable --ruby
+*note: everything executed from Zsh (Z Shell) context, .zlogin will be in the Bash context .bash_login, for example.*
+
+## RVM: Ruby Version Manager
+
+
+Install  
+```bash  
+curl -L https://get.rvm.io | bash -s stable --ruby  
 ```
 
-# Вбиваем:
-type rvm | head -1
-source ~/.zlogin
+Check:  
+```bash  
+source ~/.zlogin  
+type rvm | head -1  
+```
 
-# Если не видим rvm is a shell function, то
-echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.zlogin
-source ~/.zlogin
+If not «rvm is a shell function» in output, then  
+```bash  
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.zlogin  
+source ~/.zlogin  
+```
 
-#Проверяем: 
-type rvm | head -1
+Check:
+
+```bash  
+type rvm | head -1  
+```
 
 
-Ставим Ruby 1.9.3
--------------
-# Обновляем RVM до последней версии:
-rvm get head
+## Ruby 1.9.3 installation
 
-#Подготовка и установка:
+
+Get last RVM version:  
+```bash  
+rvm get head  
+```
+
+```bash  
 rvm requirements
 
-rvm pkg install openssl
-rvm install 1.9.3 # илиa rvm reinstall all --force если у вас уже установлен Ruby)
+rvm pkg install openssl  
+rvm install 1.9.3 # or rvm reinstall all --force if Ruby allready installed  
+```
 
+```bash  
+rvm use 1.9.3 --default  
+```
 
-# Говорим, чтобы использовалась именно эта версия:
-rvm use 1.9.3 --default
+Check:  
+```bash  
+ruby -v  
+```
 
-#Проверяем:
-ruby -v
+## Install Python 2.7
 
+We will install Python 2.7 with _--universal, --framework_ keys.  
+>_**--universal**: to support 32-bit and 64-bit on OS X._  
+>_**--framework**: to allow interaction with OS X libraries_
 
+In this case, these packages must be builded with _--universal_ key.  
+```bash  
+brew install gdbm sqlite --universal  
+```  
+If they are already installed, then  
+```bash  
+brew uninstall gdbm sqlite  
+brew install gdbm sqlite --universal  
+```
 
+Now we install python  
+```bash  
+brew install python --universal --framework  
+```
 
-Install python
-------------
-$ brew install readline gdbm sqlite --universal
-if >> python dependency sqlite not installed with: --universal
-  brew remove sqlite
-	brew install sqlite --universal
+```bash  
+. ~/.zshrc  
+python --version  
+> Python 2.7.6  
+```
 
-$ brew install python --universal --framework
-[Why with the framework and universal links](http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/#python)
+```bash  
+mkdir ~/Frameworks  
+ln -s "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework" ~/Frameworks  
+```
 
-$ python --version
-Python 2.7.5
+```bash  
+curl -O http://python-distribute.org/distribute_setup.py  
+python distribute_setup.py  
+easy_install pip  
+pip install distribute  
+```
 
-
-$ mkdir ~/Frameworks
-$ ln -s "/usr/local/Cellar/python/2.7.5/Frameworks/Python.framework" ~/Frameworks
-
-$ curl -O http://python-distribute.org/distribute_setup.py
-$ python distribute_setup.py
-$ easy_install pip
-$ pip install distribute
-
-
-
-Add to .bashrc:
-# Before other PATHs...
+Add to .bashrc Before other PATHs:  
+```bash  
 export PATH=/usr/local/share/python:$PATH
 
-# Python
-# This creates the functions for the wrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
+# Python  
+# This creates the functions for the wrapper  
+export WORKON_HOME=$HOME/.virtualenvs  
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7  
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'  
+export PIP_VIRTUALENV_BASE=$WORKON_HOME  
+export PIP_RESPECT_VIRTUALENV=true  
 if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
-    source /usr/local/bin/virtualenvwrapper.sh
+    source /usr/local/bin/virtualenvwrapper.sh  
 else
-    echo "WARNING: Can't find virtualenvwrapper.sh"
-fi
+    echo "WARNING: Can't find virtualenvwrapper.sh"  
+fi  
+```
 
-Install virtualenv
-$ pip install virtualenv 
-$ pip install virtualenvwrapper
+Install virtualenv  
+```bash  
+pip install virtualenv  
+pip install virtualenvwrapper  
+```
 
-Test setup
-$ mkvirtualenv test 
-$ rmvirtualenv test
+Test setup  
+```bash  
+mkvirtualenv test  
+rmvirtualenv test  
+```
 
-
-Install Node.js [Directions](http://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/)
-------------------------
-```bash
-brew install node
-npm install grunt-cli -g
+## Install Node.js  
+```bash  
+brew install node  
+npm install grunt-cli -g  
+```
