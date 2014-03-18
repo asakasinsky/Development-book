@@ -69,6 +69,7 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 ⌥ + 2 Sublime  
 ⌥ + 3 iTerm  
 ⌥ + 4 Dash  
+⌥ + W nvALT  
 ⌥ + A Chrome Canary  
 ⌥ + Z Mail  
 And you need install «Plain Clip Plug», for cleaning rich format text in a clipboard.  
