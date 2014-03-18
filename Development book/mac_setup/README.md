@@ -8,4 +8,4 @@ If you take any step separately, then you need to consider that some of the «de
 4. [Languages.md](/Development%20book/mac_setup/Languages.md)  
 5. [DeveloperTools.md](/Development%20book/mac_setup/DeveloperTools.md)  
 6. [SublimeText3.md](/Development%20book/mac_setup/SublimeText3.md)  
-7. [VirtualBox.md](/Development%20book/mac_setup/VirtualBox.md)
+7. [VirtualBox.md](/Development%20book/VM/Readme.md)
