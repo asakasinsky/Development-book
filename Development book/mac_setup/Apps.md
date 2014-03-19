@@ -60,8 +60,9 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 ## Productivity  
 [nvALT](http://brettterpstra.com/projects/nvalt/)  
-[nvALT Browser Extensions](http://elasticthreads.tumblr.com/post/8212672178/nvit-chrome-and-safari-extensions-for-nvalt)  
-[Spark](http://www.shadowlab.org/softwares/spark.php) 
+[nvALT Browser Extensions](http://elasticthreads.tumblr.com/post/8212672178/nvit-chrome-and-safari-extensions-for-nvalt)    
+[Spark](http://www.shadowlab.org/softwares/spark.php)  
+[Plain Clip Plug —  Spark plugin which removes any formatting from text which is on the clipboard.](http://www.bluem.net/files/Plain-Clip-Plug.dmg)  
 
 #### My hotkeys for Spark  
 ```bash  
@@ -76,6 +77,8 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 And you need install «Plain Clip Plug», for cleaning rich format text in a clipboard.  
 Hotkey - ⌘+⇧+V check  «Send ⌘-V keystroke»  
 ```
+
+
 
 [Evernote without AppStore](http://www.macupdate.com/app/mac/27456/evernote)  
 [XMind](http://www.xmind.net/download/)  
