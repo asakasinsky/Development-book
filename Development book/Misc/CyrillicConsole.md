@@ -6,8 +6,8 @@ less /usr/share/i18n/SUPPORTED
 ```  
 Включаем нужную локаль:  
 ```bash  
-sudo locale-gen ru_RU  
-sudo locale-gen ru_RU.UTF8  
+sudo locale-gen ru_RU.utf8  
+sudo dpkg-reconfigure locales  
 ```
 
 ```bash  
