@@ -3,7 +3,7 @@
 Check version  
 ```bash  
 lsb_release -a  
-```bash
+```
 
 Check free disk space  
 ```bash  
