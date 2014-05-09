@@ -15,9 +15,7 @@ sudo apt-get -y install  php5-common php5-mysql php5-fpm sqlite php5-sqlite php5
 php -v  
 ```
 
-Ставим по желанию PEAR и PHPUnit.  
-
-> Впрочем сейчас есть тенденция использовать Composer вместо PEAR. У меня пока нет сложившегося мнения какой менеджер лучше, замечу только что Composer устанавливает зависимости локально в проекте а не глобально на уровне всей системы
+Ставим по желанию PEAR и PHPUnit...  
 
 ```bash  
 sudo apt-get -y install php-pear  
@@ -28,6 +26,15 @@ sudo pear channel-discover components.ez.no
 sudo pear channel-discover pear.symfony.com  
 sudo pear install --alldeps phpunit/PHPUnit  
 ```
+
+... или Composer (глобально, на уровне системы; команда «composer» вместо локального «php composer.phar» )
+> Сейчас есть тенденция использовать Composer вместо PEAR. У меня пока нет сложившегося мнения какой менеджер лучше, замечу только что Composer устанавливает зависимости локально в проекте а не глобально на уровне всей системы
+
+```bash
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+```
+
 
 Убедимся, что php5-fpm стартует при загрузке системы  
 ```bash  
