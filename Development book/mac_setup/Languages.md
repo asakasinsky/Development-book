@@ -123,7 +123,24 @@ rmvirtualenv test
 ```
 
 ## Install Node.js  
+
+[Use one of these techniques to install node and npm without having to sudo](https://gist.github.com/isaacs/579814)
+
+```bash
+echo 'export PATH=$HOME/.node/bin:$PATH' >> ~/.zshrc
+echo 'export NODE_PATH=$HOME/.node/lib/node_modules/' >> ~/.zshrc
+. ~/.zshrc
+
+mkdir ~/.node
+mkdir ~/node-latest-install
+cd ~/node-latest-install
+curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
+./configure --prefix=~/.node
+make install # ok, fine, this step probably takes more than 30 seconds...
+curl https://www.npmjs.org/install.sh | sh
+```
+
 ```bash  
-brew install node  
-npm install grunt-cli -g  
+
+npm install -g grunt grunt-cli jshint yo generator-generator generator-backbone generator-webapp generator-chaplin
 ```

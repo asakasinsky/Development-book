@@ -1,10 +1,13 @@
-Несмотря на то, что есть возможность поставить node из репозитория, 
 sudo apt-get update
 sudo apt-get install python-software-properties python g++ make
 
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install nodejs
+
+---------------------------------------------------------
+
+Несмотря на то, что есть возможность поставить node из репозитория, 
 
 будем ставить пакет, собранный из исходников, так как нужна более свежая версия, чем показывает `apt-cache policy nodejs` (репозиторий был подключен)
 
@@ -26,7 +29,7 @@ sudo checkinstall -D
 В принципе всё должно пройти нормально. Пакет всегда можно удалить с помощью `dpkg -r имя пакета(в нашем случае node-latest)`
 Проверяем версию: `node -v`.
 
-----------
+---------------------------------------------------------
 
 Ставим NPM - пакетный менеджер
 curl https://npmjs.org/install.sh | sh
