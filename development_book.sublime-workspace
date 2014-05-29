@@ -1,0 +1,1754 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ne",
+				"new_identity	function"
+			],
+			[
+				"C",
+				"CONTROL_PORT	statement"
+			],
+			[
+				"di",
+				"dir	function"
+			],
+			[
+				"control",
+				"ControlPort	class"
+			],
+			[
+				"s",
+				"socket	import"
+			],
+			[
+				"rou",
+				"routine	function"
+			],
+			[
+				"tr",
+				"try	Try/Except/Else"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"parent",
+				"parent_id"
+			],
+			[
+				"sc",
+				"scrollable"
+			],
+			[
+				"pag",
+				"page_id"
+			],
+			[
+				"o",
+				"overwrite"
+			],
+			[
+				"tea",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"app",
+				"append_page"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"height",
+				"height"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"ri",
+				"right_pane"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"ima",
+				"image_files"
+			],
+			[
+				"im",
+				"image_files"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"tab",
+				"table"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"ro",
+				"roman"
+			],
+			[
+				"co",
+				"colossal"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"console",
+				"console.info();"
+			],
+			[
+				"con",
+				"console.log();"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"but",
+				"button"
+			],
+			[
+				"bott",
+				"bottom-panel"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"page",
+				"page"
+			],
+			[
+				"i",
+				"items  (variable)"
+			],
+			[
+				"parseI",
+				"parseInt  (function)"
+			],
+			[
+				"de",
+				"define"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"heig",
+				"height"
+			],
+			[
+				"pa",
+				"page_obj"
+			],
+			[
+				"in",
+				"indicator"
+			],
+			[
+				"scroll",
+				"scroller_"
+			],
+			[
+				"bal",
+				"background-color"
+			],
+			[
+				"roo",
+				"root_id"
+			],
+			[
+				"item",
+				"items"
+			],
+			[
+				"me",
+				"menuItem"
+			],
+			[
+				"ite",
+				"items"
+			],
+			[
+				"to",
+				"toJSON"
+			],
+			[
+				"curr",
+				"current_item_obj"
+			],
+			[
+				"par",
+				"parent_id"
+			],
+			[
+				"curren",
+				"current_item_obj  (variable)"
+			],
+			[
+				"current",
+				"current_item_obj"
+			],
+			[
+				"cu",
+				"current_item_obj"
+			],
+			[
+				"pre",
+				"prepend"
+			],
+			[
+				"bu",
+				"build_page_next"
+			],
+			[
+				"on",
+				"on"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"str",
+				"toString  (function)"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"re",
+				"render"
+			],
+			[
+				"buil",
+				"build_page"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"ini",
+				"init"
+			],
+			[
+				"tes",
+				"test_data"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"pull",
+				"pull-left"
+			],
+			[
+				"ca",
+				"catch"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"MY",
+				"MY_items"
+			],
+			[
+				"cre",
+				"createTags"
+			],
+			[
+				"com",
+				"composition"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"mi",
+				"mixinLink"
+			],
+			[
+				"file",
+				"fileUrl"
+			],
+			[
+				"att",
+				"attr"
+			],
+			[
+				"debug",
+				"debugLog"
+			],
+			[
+				"nod",
+				"node_update"
+			],
+			[
+				"it",
+				"item-ext"
+			],
+			[
+				"span",
+				"span4"
+			],
+			[
+				"do",
+				"dotted"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"cal",
+				"calc_top"
+			],
+			[
+				"My",
+				"MY_items"
+			],
+			[
+				"M",
+				"MY_items"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"th",
+				"this	this"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"vi",
+				"visibility"
+			],
+			[
+				"obj",
+				"objLink"
+			],
+			[
+				"menu",
+				"menu-item"
+			],
+			[
+				"a",
+				"absolute	(a)"
+			],
+			[
+				"j",
+				"js"
+			],
+			[
+				"img",
+				"IMG"
+			],
+			[
+				"x",
+				"xhr"
+			],
+			[
+				"dr",
+				"draggable"
+			],
+			[
+				"drop",
+				"droppable"
+			],
+			[
+				"ui",
+				"ui_width"
+			],
+			[
+				"debu",
+				"debugLog"
+			],
+			[
+				"margin-",
+				"margin-left:   (property)"
+			],
+			[
+				"li",
+				"MY_list_container"
+			],
+			[
+				"deb",
+				"debugLog"
+			],
+			[
+				"sor",
+				"sortable_handler"
+			],
+			[
+				"no",
+				"node_remove"
+			],
+			[
+				"stop",
+				"stopPropagation  (variable)"
+			],
+			[
+				"st",
+				"start"
+			],
+			[
+				"is",
+				"is_copy"
+			],
+			[
+				"l",
+				"length  (variable)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Development book/tmp/Nodejs_tools.md",
+			"settings":
+			{
+				"buffer_size": 2463,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Development book/Misc/CyrillicConsole.md",
+			"settings":
+			{
+				"buffer_size": 650,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 53 files for \"checkinstall\"\n\n/Users/asakasinsky/Workspace/Development-book/Development book/tmp/Nodejs_tools.md:\n   13  \n   14  Утилита для сборки пакета, делающая в принципе то же самое, что делает `make install`, но при этом регистрируя устанавливаемую программу в пакетной базе дистрибутива.\n   15: sudo apt-get install checkinstall\n   16  \n   17  echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc\n   ..\n   23  ./configure --prefix=~/local\n   24  make\n   25: sudo checkinstall -D\n   26  \n   27  Появится диалог смены опций. Нужно поменять версию, иначе в дальнейшем появится ошибка из-за того что номер версии должен начинатся с цифры. На данный момент версия - 0.10.15\n\n2 matches in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 708,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "## Что это и зачем\n\nLEMP-helper — утилита для быстрого добавления/удаления хоста на стеке Nginx - PHP-FPM. LEMP-helper написан на bash, включает в себя заготовки настроек php и nginx. Заготовки настроек nginx основаны на [nginx-boilerplate](https://github.com/Umkus/nginx-boilerplate). Настройки php основаны на личном опыте. Также LEMP-helper содержит заготовки настроек для хоста. \n\nЧтобы начать пользоваться утилитой, нужно выполнить в терминале следующую команду \nwget https://raw.github.com/asakasinsky/LEMP-helper/master/loader.sh && chmod +x loader.sh && ./loader.sh\nОна скачает и запустит загрузчик который подготовит утилиту для дальнейшей работы.\nПереходим в папку lemp-helper.\n\n## Настройки стека Nginx - PHP-FPM\n\nЕсли хотите воспользоваться моими настройками Nginx - PHP-FPM, то сначала нужно убедиться в правильности путей к php.ini и nginx. Скорее всего они совпадают с заготовленными если у вас Ubuntu Server 12-ой или 13-ой версии, но чем черт не шутит, как говорится. Еще нужно учесть, что php для командной строки(php-cli), скорее всего имеет отдельный файл настроек\n\nУ меня это пути:\n```bash\n/etc/php5/fpm/php.ini\n/etc/php5/cli/php.ini\n```\n\nНастройки nginx лежат обычно тут:\n```bash\n/etc/nginx/nginx.conf\n```\n\nЕсли у вас всё пути совпадают, можно просто запустить скрипт и он всё сделает сам:\n```bash\ncd lemp-helper\nsudo ./update_lemp_conf.sh\n```\n\nИли коректируем команды ниже исходя из своих путей\n```bash\ncp -R lemp-helper/configs/nginx/nginx-bp /etc/nginx\nmv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.old\ncp -R lemp-helper/configs/nginx/nginx.conf /etc/nginx/nginx.conf\n\nmv /etc/php5/fpm/php.ini /etc/php5/fpm/php.ini.old\ncp lemp-helper/configs/php/php.ini /etc/php5/fpm/php.ini\n\nmv /etc/php5/cli/php.ini /etc/php5/cli/php.ini.old\ncp lemp-helper/configs/php/php.ini /etc/php5/cli/php.ini\n```\n\n\n## Добавление/удаление хоста\n\nВ папке \n\n\n",
+			"settings":
+			{
+				"buffer_size": 1859,
+				"line_ending": "Unix",
+				"name": "## Что это и зачем"
+			}
+		},
+		{
+			"file": "Development book/tmp/разное.md",
+			"settings":
+			{
+				"buffer_size": 1621,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Development book/tmp/TODO.md",
+			"settings":
+			{
+				"buffer_size": 1893,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Development book/mac_setup/DeveloperTools.md",
+			"settings":
+			{
+				"buffer_size": 2795,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "function guid() {\n  function s4() {\n    return Math.floor((1 + Math.random()) * 0x10000)\n               .toString(16)\n               .substring(1);\n  }\n  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +\n         s4() + '-' + s4() + s4() + s4();\n}\n\nfunction S4() {\n    return (((1 + Math.random()) * 0x10000)|0).toString(16).substring(1); \n}\n \n// then to call it, plus stitch in '4' in the third group\nguid = (S4() + S4() + \"-\" + S4() + \"-4\" + S4().substr(0,3) + \"-\" + S4() + \"-\" + S4() + S4() + S4()).toLowerCase();\nalert(guid);",
+			"settings":
+			{
+				"buffer_size": 532,
+				"line_ending": "Unix",
+				"name": "function guid() {"
+			}
+		},
+		{
+			"file": "Development book/LEMP/Python.md",
+			"settings":
+			{
+				"buffer_size": 6464,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pak",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ma",
+				"Markboard: Copy Rich Text"
+			],
+			[
+				"PAC",
+				"Package Control: Install Package"
+			],
+			[
+				"oc",
+				"Octopress: Deploy"
+			],
+			[
+				"o",
+				"Octopress: Preview Stop"
+			],
+			[
+				"oct",
+				"Octopress: Deploy"
+			],
+			[
+				"ge",
+				"Octopress: Generate And Deploy"
+			],
+			[
+				"prev",
+				"Octopress: Preview Start"
+			],
+			[
+				"de",
+				"Octopress: Deploy"
+			],
+			[
+				"octo",
+				"Octopress: Preview Stop"
+			],
+			[
+				"po",
+				"Octopress: New Post"
+			],
+			[
+				"pos",
+				"Octopress: New Post"
+			],
+			[
+				"n",
+				"Octopress: New Post"
+			],
+			[
+				"new",
+				"Octopress: New Post"
+			],
+			[
+				"post",
+				"Octopress: New Post"
+			],
+			[
+				"octopres",
+				"Octopress: New Post"
+			],
+			[
+				"pre",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"pr",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"pret",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"codeintel",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"we",
+				"Web Inspector"
+			],
+			[
+				"swe",
+				"Set Syntax: Web Inspector (Log)"
+			],
+			[
+				"swi",
+				"Snippet: wrapInner"
+			],
+			[
+				"git ",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"git: ",
+				"Git: Add..."
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git a",
+				"Git: Add Current File"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"git log",
+				"Git: Log All"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"gi",
+				"Git: Commit"
+			],
+			[
+				"git br",
+				"Git: Change Branch"
+			],
+			[
+				"css",
+				"Sort via CSScomb"
+			],
+			[
+				"inde",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tas",
+				"Tasks: New document"
+			],
+			[
+				"pla",
+				"Package Control: List Packages"
+			],
+			[
+				"prett",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"packe",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"hg",
+				"Hg: Push"
+			],
+			[
+				"hg add",
+				"Hg: Add Current File"
+			],
+			[
+				"hg a",
+				"Hg: Add Current File"
+			],
+			[
+				"PACK",
+				"Package Control: List Packages"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"prin",
+				"Print to HTML: print as HTML via browser"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"comm",
+				"Hg: Quick Commit"
+			],
+			[
+				"h",
+				"Hg: Pull"
+			],
+			[
+				"prefx",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"i",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"men",
+				"SublimeHg: Open Menu"
+			],
+			[
+				"sta",
+				"View: Toggle Status Bar"
+			],
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"mi",
+				"View: Toggle Minimap"
+			],
+			[
+				"min",
+				"View: Toggle Minimap"
+			],
+			[
+				"open files",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"tit",
+				"Convert Case: Title Case"
+			],
+			[
+				"titl",
+				"Convert Case: Title Case"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"goto",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"su",
+				"SublimeHg: Hg"
+			],
+			[
+				"sub",
+				"SublimeHg: Hg"
+			],
+			[
+				"sublime",
+				"SublimeHg: Hg"
+			],
+			[
+				"sublimehg",
+				"SublimeHg: Hg"
+			],
+			[
+				"SUBLIMEHG",
+				"Set Syntax: SublimeHg Command Line"
+			],
+			[
+				"SUBLI",
+				"Set Syntax: SublimeHg Command Line"
+			],
+			[
+				"subli",
+				"Set Syntax: SublimeHg Command Line"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"mo",
+				"Mote"
+			],
+			[
+				"mote",
+				"Mote"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 301.0,
+		"history":
+		[
+			"print(os.environ)",
+			"import os;",
+			"print(os.environ)",
+			"import os;",
+			"sys.version",
+			"import sys",
+			"sys.version"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/asakasinsky/Workspace/krypton.hosting",
+		"/Users/asakasinsky/Dropbox/Privacy/hosting/xmpp.hosting.neon",
+		"/etc/hosts",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/Languages.md",
+		"/Users/asakasinsky/.zshrc",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/.gitignore",
+		"/Users/asakasinsky/Workspace/lemp/tng-ap.local/tng-ap.nginx.conf",
+		"/private/var/folders/25/9x1np6x920ldqd5hnbj8xmxr0000gn/T/fz3temp-1/.htaccess",
+		"/private/var/folders/25/9x1np6x920ldqd5hnbj8xmxr0000gn/T/fz3temp-1/.htaccess 2",
+		"/private/var/folders/25/9x1np6x920ldqd5hnbj8xmxr0000gn/T/fz3temp-1/index.html",
+		"/Users/asakasinsky/Dropbox/Privacy/hosting/viacheslavssk_DO.md",
+		"/Users/asakasinsky/Workspace/lemp/likadress.dev/likadress.hosting",
+		"/Users/asakasinsky/Workspace/lemp/likadress.dev/likadress.mysql.conf",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/tmp/py2app.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/tmp/tuning.md",
+		"/private/var/folders/25/9x1np6x920ldqd5hnbj8xmxr0000gn/T/fz3temp-1/functions.php",
+		"/Users/asakasinsky/Downloads/homka-povtorushka.ru.md",
+		"/Users/asakasinsky/.ssh/config",
+		"/Users/asakasinsky/Workspace/lemp/touch-n-get-client.dev/tng.hosting",
+		"/Users/asakasinsky/Workspace/lemp/touch-n-get-client.dev/hosting.neon",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/LEMP/Readme.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/Misc/SFTPChrooting.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/Misc/DOKernelUpgrade.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/LEMP/Python.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/LEMP/PHP.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/LEMP/Mysql.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/LEMP/Nginx.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/LEMP/NecessaryPackages.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/LEMP/SshDisableRoot.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/Misc/CyrillicConsole.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/Misc/ReleaseUpgrade.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/README.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/VM/Readme.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/tmp/LEMP.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/Shell.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/shell/tmux_conf.sh",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/shell/.zshrc",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/home/.jshintrc",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/VM/VirtualBox.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/VM/SharedFolders.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/VM/VirtualboxHeadless.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/VM/VirtualboxGuestAdditions.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/VM/SSH.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/VM/NetworkInterfaces.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/VM/UbuntuServerInstallation.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/VM/ubuntu_server_installation.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/tmp/ubuntu_server_installation.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/tmp/Readme.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/VirtualBox.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/home/.htoprc",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/Network_Interfaces.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/virtualbox_headless.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/virtualbox_guest_additions.md",
+		"/Users/asakasinsky/Yandex.Disk/Backups/crontab.txt",
+		"/Users/asakasinsky/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/ssh.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/DeveloperTools.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/SublimeText3.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/Apps.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/LEMP.md",
+		"/Users/asakasinsky/.tmux.conf",
+		"/Users/asakasinsky/scripts/tmux_work.sh",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/OSPreferences.md",
+		"/private/var/folders/25/9x1np6x920ldqd5hnbj8xmxr0000gn/T/fz3temp-1/mail_add.php",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/sftp_chrooting.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/PHP.md",
+		"/Users/asakasinsky/Workspace/lemp/likadress.dev/likadress.hosting.development",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/ssh_disable_root.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/mysql.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/mac_setup/Misc.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/nginx.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/TODO.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/webmin.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/release_upgrade.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/cyrillic_console.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/python.md",
+		"/Users/asakasinsky/Repositories/LEMP-helper/loader.sh",
+		"/Users/asakasinsky/Workspace/lemp/iv-trikotage.dev/hosting",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/github.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/ubuntu_server_installation.md",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/necessary_packages.md",
+		"/Users/asakasinsky/Workspace/python/likadress.py",
+		"/Users/asakasinsky/Workspace/python/testsocket.py",
+		"/Users/asakasinsky/Workspace/python/common/PySocks/README.md",
+		"/Users/asakasinsky/Workspace/python/stem/control.py",
+		"/Users/asakasinsky/Downloads/advlist.xml",
+		"/Users/asakasinsky/Desktop/message.md",
+		"/Users/asakasinsky/Workspace/flask/app/views.py",
+		"/Users/asakasinsky/Workspace/flask/spider/app/parser_task.py",
+		"/Users/asakasinsky/Workspace/anton-parser/parser.py",
+		"/Users/asakasinsky/Workspace/xmlrpc.py",
+		"/Users/asakasinsky/Workspace/socks.py",
+		"/Users/asakasinsky/Workspace/test.py",
+		"/Users/asakasinsky/Workspace/likadress.py",
+		"/Users/asakasinsky/Desktop/антон/метрика.txt",
+		"/Users/asakasinsky/Desktop/антон/вебмастер.txt",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/footer.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/header.php",
+		"/Users/asakasinsky/Workspace/lemp/iv-trikotage.dev/htdocs/index.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/cat2.php",
+		"/Users/asakasinsky/Workspace/lemp/iv-trikotage.dev/index.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/index 2.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/pro_share_run.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/error.log",
+		"/Users/asakasinsky/tmp/error.log",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/cart_mini2.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/function.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/callback.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/index.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/error.log.1",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/ubuntu/LAMP.md",
+		"/Users/asakasinsky/Workspace/gmstar-spider/gmstar/requirements.txt",
+		"/Users/asakasinsky/Workspace/flask/ex.py",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/style.css",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/registration-oriflame.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/reg.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/registration_view.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/page_view.php",
+		"/private/var/folders/yt/wc10515x7x1fdr4t84ykx6hh0000gn/T/fz3temp-1/catalogs_view.php",
+		"/Users/asakasinsky/Repositories/LEMP-helper/tools/add-user-n-domain.sh",
+		"/Users/asakasinsky/Desktop/likadress.hosting",
+		"/Users/asakasinsky/Workspace/Development-book/Development book/upgrade.md",
+		"/Users/asakasinsky/Downloads/index.php",
+		"/Users/asakasinsky/Workspace/gmstar-spider/gmstar/gmstar-grab/queue_handler.py",
+		"/Users/asakasinsky/Workspace/gmstar-spider/gmstar/gmstar-grab/parser_task.py",
+		"/Users/asakasinsky/Desktop/127.0.0.1gmstar20.01.14",
+		"/Users/asakasinsky/Desktop/gmstar_2014-01-20.sql",
+		"/Users/asakasinsky/Downloads/LIKA/db_backups/backup.php"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"",
+			"/Users/asakasinsky/Repositories/LEMP-helper/configs/nginx",
+			"/Users/asakasinsky/Repositories/LEMP-helper/tools/errors_tpl",
+			"/Users/asakasinsky/Repositories/LEMP-helper/nginx-bp",
+			"/Users/asakasinsky/Repositories/LEMP-helper/nginx-bpworker_processes",
+			"/Users/asakasinsky/Downloads/error_pages/usr/share/nginx/error_pages",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"checkinstall",
+			".bashrc",
+			"local",
+			"innodb_log_buffer_size",
+			"key_buffer_size",
+			"Jgnbvbpfwbz",
+			"Jgn",
+			"max_allowed_packet",
+			"max_connect_errors",
+			"query_cache_limit",
+			"query_cache_size",
+			"query_cache_type",
+			"innodb_use_native_aio",
+			"innodb_file_per_table",
+			"tmp_table_size",
+			"max_binlog_size",
+			"max_heap_table_size",
+			"tmpdir",
+			"register_nav_menus",
+			"menus",
+			"gmstar",
+			"koothrappali",
+			"no",
+			"PermitRootLogin",
+			"пакет",
+			"accessible",
+			"interrupted",
+			"SSH",
+			"UbuntuLAMPServer",
+			"network_in",
+			"lamp",
+			"UbuntuLAMPServer",
+			"CamelCase",
+			"Monaco",
+			"Useful",
+			"Pudb",
+			"permissions",
+			"bash_login",
+			"Probe",
+			"Trello",
+			"TrueCrypt",
+			"koothrappali",
+			"apc",
+			"%2F",
+			"r\\n",
+			"ua",
+			"s",
+			"'",
+			"\"",
+			"result",
+			"data",
+			"socket",
+			"CONTROL_PORT",
+			"S",
+			"s",
+			"getaddrinfo",
+			"рутом__",
+			"query",
+			"town",
+			"sp_cent",
+			".ru/htdocs/cart/pro_share_run.php",
+			" \"e/iv-trikotage.ru/htdocs/cat2.php",
+			"iv-trikotage.ru/htdocs/cat2.php",
+			"cat2.php",
+			"name",
+			"$_COOKIE['auth']",
+			"api",
+			"project",
+			"htdocs",
+			"api",
+			"htdocs",
+			"project",
+			"api",
+			"uwsgi",
+			"UWSGI",
+			"php5-fpm",
+			"venv",
+			"/opt/python3.3/lib/python3.3",
+			"/opt/python3.3/lib/python3.3 ",
+			"www-data",
+			"/srv/www/helloworld",
+			"- ",
+			"a:",
+			"PT",
+			"span",
+			"nginx",
+			"rota",
+			"sendma",
+			"mail.ru",
+			"ivtrikotage37.ru",
+			"301",
+			"SFTPPASS",
+			"password",
+			"PASSWORD",
+			"Password",
+			"password",
+			"PASSWORD",
+			"$USERNAME",
+			"CONFIG",
+			"HOME_DIR",
+			"root",
+			"@@$DOMAIN@@",
+			"error_pages",
+			"error_pages/",
+			"Password",
+			"password",
+			"PASSWORD",
+			"SFTPPASS",
+			"iv-trikotage.ru",
+			"proxy_buffer_size",
+			"server_tokens",
+			"types_hash_max_size",
+			"client_max_body_size",
+			"server_names_hash_bucket_size",
+			"postpone_output",
+			"sendfile",
+			"sendfile_max_chunk",
+			"output_buffers",
+			"sendfile",
+			"fastcgi_cache_path",
+			"worker_processes",
+			"keepalive_requests",
+			"worker_priority",
+			"/error_pages/",
+			"Hub21",
+			"grep",
+			"addgroup sftp",
+			"siege"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@@DOMAIN@@",
+			"@@$DOMAIN@@",
+			"iv-trikotage",
+			"",
+			"памятка",
+			"18%",
+			"restaurant",
+			"MY_project.state",
+			"MY_project.breadcrumb",
+			"MY_project.list_container",
+			"MY_project.tree",
+			"MY_project.parent_name",
+			"MY_project.parent",
+			"breadcrumb_click_handler",
+			"item_click_handler",
+			"show_child",
+			"MY_parent",
+			"CI",
+			"restourant",
+			"FALSE",
+			"( ! (int)",
+			"fetch_assoc",
+			"dump",
+			"analyze",
+			"fix_copy",
+			"move",
+			"remove",
+			"create",
+			"get_children",
+			"get_node",
+			"get_node_obj",
+			"get_root",
+			"set_data",
+			"select_tree",
+			"remove_tree",
+			"get_children_obj",
+			"$this->_ci->db->query(",
+			"item-btn-auto",
+			"item-panel-block",
+			"item-panel",
+			"item-panel-b",
+			"item-cash",
+			"item-cash-b",
+			"Пользовательское",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Development book/tmp/Nodejs_tools.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1021,
+								1021
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 139.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Development book/Misc/CyrillicConsole.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								205,
+								205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 708,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										333,
+										345
+									],
+									[
+										481,
+										493
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1859,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1477,
+								1477
+							]
+						],
+						"settings":
+						{
+							"auto_name": "## Что это и зачем",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Development book/tmp/разное.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1621,
+								1621
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 633.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Development book/tmp/TODO.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								861,
+								929
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 393.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Development book/mac_setup/DeveloperTools.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 874.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								532,
+								532
+							]
+						],
+						"settings":
+						{
+							"auto_name": "function guid() {",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Development book/LEMP/Python.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 61.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 96.0
+	},
+	"project": "development_book.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"vi",
+				"Development book/mac_setup/VirtualBox.md"
+			],
+			[
+				"lan",
+				"Development book/mac_setup/Languages.md"
+			],
+			[
+				"ss",
+				"Development book/ubuntu/ssh.md"
+			],
+			[
+				"php",
+				"Development book/ubuntu/PHP.md"
+			],
+			[
+				"mys",
+				"Development book/ubuntu/mysql.md"
+			],
+			[
+				"ng",
+				"Development book/ubuntu/nginx.md"
+			],
+			[
+				"ci",
+				"Development book/ubuntu/cyrillic_console.md"
+			],
+			[
+				"lem",
+				"Development book/ubuntu/LEMP.md"
+			],
+			[
+				"pask",
+				"source/_posts/2013-08-27-paskhalka-ot-apple.markdown"
+			],
+			[
+				"heade",
+				"application/modules/auth/views/header.php"
+			],
+			[
+				"",
+				"application/modules/admin/models/admin_model.php"
+			],
+			[
+				"admi",
+				"application/modules/admin/models/admin_model.php"
+			],
+			[
+				"mai",
+				"application/modules/main/models/main_model.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Workspace/lemp/touch-n-get-client.dev/touch-n-get-client.sublime-project"
+			],
+			[
+				"lik",
+				"~/Workspace/lemp/likadress.dev/likadress.sublime-project"
+			],
+			[
+				"to",
+				"~/Workspace/lemp/touch-n-get.dev/touch-n-get.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 980.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
