@@ -7,7 +7,7 @@ sudo apt-get upgrade
 ```
 
 ```bash  
-sudo apt-get -y install  php5-common php5-mysql php5-fpm sqlite php5-sqlite php5-cli php5-gd php5-curl php5-xdebug php-apc php5-imagick php5-intl php5-mcrypt php5-xmlrpc php5-memcached  
+sudo apt-get -y install  php5-common php5-mysql php5-fpm sqlite php5-sqlite php5-cli php5-gd php5-curl php5-xdebug php5-imagick php5-intl php5-mcrypt php5-xmlrpc php5-memcached  
 ```
 
 Проверяем версию  

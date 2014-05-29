@@ -23,20 +23,25 @@ __PHP, Perl, Python:__
 
 ## Подготовка
 
-- если установка производится на VM Virtualbox, то нелишним будет это: [VirtualBox.md](/Development%20book/VM/Readme.md)
+- если установка производится на VM Virtualbox, то нелишним будет это: [VirtualBox.md](../VirtualBox/README.md)
 2. Использование развёрнутого образа на VDS/VPS
     - ввести: <code>lsb_release -a</code>
-    - если версия релиза образа меньше требуемой, то [Обновляем версию дистрибутива](/Development%20book/Misc/ReleaseUpgrade.md)
+    - если версия релиза образа меньше требуемой, то [Обновляем версию дистрибутива](../Misc/ReleaseUpgrade.md)
     - если верия устраивает, то ввести: <code>sudo apt-get update && sudo apt-get upgrade</code>
 
 Примечание:
 На [Digital Ocean]( https://www.digitalocean.com/?refcode=bbc4266b0488
-) (реф. ссылка) можно апгрейдить kernel с помощью [нехитрого способа](/Development%20book/Misc/DOKernelUpgrade.md). 
+) (реф. ссылка) можно апгрейдить kernel с помощью [нехитрого способа](../Misc/DOKernelUpgrade.md). 
+
+
+__Swap__
+
+[Swap файл](../Misc/Swap.md)
 
 
 __Локаль__
 
-[Поддержка кириллицы](/Development%20book/Misc/CyrillicConsole.md)
+[Поддержка кириллицы](../Misc/CyrillicConsole.md)
 
 
 __Временная зона__
@@ -63,9 +68,9 @@ sudo dpkg-reconfigure tzdata
 /etc/init.d/cron start
 ```
 
-__Нехорошо всегда ходить на сервер под рутом__, [Исправим это недоразумение](/Development%20book/LEMP/SshDisableRoot.md)
+__Нехорошо всегда ходить на сервер под рутом__, [Исправим это недоразумение](../Misc/SshDisableRoot.md)
 
-[**Ограничим будущих пользователей домашней папкой**](/Development%20book/Misc/SFTPChrooting.md)
+[**Ограничим будущих пользователей домашней папкой**](../Misc/SFTPChrooting.md)
 
 ----------------------------------
 
@@ -73,20 +78,21 @@ __Нехорошо всегда ходить на сервер под рутом
 
 Начнем с python-software-properties для удобного добавления репозиториев. Выполним в консоли сервера команды:
 
-[Ставим нужные пакеты](/Development%20book/LEMP/NecessaryPackages.md)
+[Ставим нужные пакеты](./NecessaryPackages.md)
 
 ```bash 
 mkdir ~/workspace
 ```
 
-[Nginx](/Development%20book/LEMP/Nginx.md)
+[Nginx](./Nginx.md)
 
-[MySQL](/Development%20book/LEMP/Mysql.md)
+[MySQL](./Mysql.md)
 
-[PHP](/Development%20book/LEMP/PHP.md)
+[PHP](./PHP.md)
 
-[Python](/Development%20book/LEMP/Python.md)
+[Python](./Python.md)
 
+[Varnish](./Varnish.md)
 
 ## LEMP-helper
 

@@ -1,5 +1,5 @@
 # Development Book
 
-[Моё рабочее окружение на Mac](/Development%20book/mac_setup/README.md)  
-[Настройка VirtualBox на Mac](/Development%20book/VM/Readme.md)  
-[Установка стека решений LEMP](/Development%20book/LEMP/Readme.md)  
+[Моё рабочее окружение на Mac](OSX/README.md)  
+[Настройка VirtualBox на Mac](VirtualBox/README.md)  
+[Установка стека решений LEMP](LEMP/README.md)  

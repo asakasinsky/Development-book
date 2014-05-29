@@ -1,0 +1,18 @@
+{
+	"browser": true,
+	"curly": true,
+	"eqeqeq": true,
+	"newcap": true,
+	"undef": true,
+	"eqnull": true,
+	"asi":true,
+	"boss": false,
+	"globals": {
+		"$": true,
+		"jQuery": true,
+		"exports": true,
+		"console": false,
+		"alert": false,
+		"prompt": false
+	}
+}
