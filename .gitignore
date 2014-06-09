@@ -1,10 +1,3 @@
-
-.DS_Store
-public
-vendor
-node_modules
-
-# Sublime Text 2
-#----------------
-development_book.sublime-project
-development_book.sublime-workspace
+# /tmp
+*.sublime-project
+*.sublime-workspace
