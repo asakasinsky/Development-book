@@ -34,10 +34,6 @@ __PHP, Perl, Python:__
 ) (реф. ссылка) можно апгрейдить kernel с помощью [нехитрого способа](../Misc/DOKernelUpgrade.md). 
 
 
-__Swap__
-
-[Swap файл](../Misc/Swap.md)
-
 
 __Локаль__
 
@@ -71,6 +67,13 @@ sudo dpkg-reconfigure tzdata
 __Нехорошо всегда ходить на сервер под рутом__, [Исправим это недоразумение](../Misc/SshDisableRoot.md)
 
 [**Ограничим будущих пользователей домашней папкой**](../Misc/SFTPChrooting.md)
+
+
+
+__Swap__
+
+[Swap файл](../Misc/Swap.md)
+
 
 ----------------------------------
 
