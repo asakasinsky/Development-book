@@ -47,3 +47,8 @@ killall Dock
 ## Window state restoring
 
 Deselect: _System Settings — General — Close windows when qutting an application []_
+
+
+## Disable automatic sleep on power adapter
+
+Set  «Never» _System Preferences — Energy Saver — Power Adapter tab_

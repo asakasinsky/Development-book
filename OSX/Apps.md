@@ -1,5 +1,13 @@
 # Apps
 
+## Command Line Tools
+
+Installing Command Line Tools in Mac OS X. Run in terminal:
+```bash
+xcode-select --install
+```
+
+
 ## [Homebrew](http://mxcl.github.com/homebrew/)
 
 ``` bash
@@ -7,23 +15,16 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew doctor
 brew update
 brew tap homebrew/dupes
-brew install mc ack wget curl pkg-config  ffmpeg autoconf automake apple-gcc42
+brew install mc ack wget curl pkg-config  ffmpeg autoconf automake apple-gcc42 git git-flow htop mc 
 sudo ln -s /usr/local/bin/gcc-4.2 /usr/bin/gcc-4.2
 ```
+
 
 ## System
 [XQuartz (X11)](http://xquartz.macosforge.org/trac/wiki)
 <code>sudo ln -s /opt/X11 /usr/X11</code>
 
 [Java](http://www.java.com/en/download/mac_download.jsp?locale=en)
-
-[Xcode](https://developer.apple.com/xcode/)
-
-
-
-Xcode > Preferences > Downloads > __Command Line Tools__
-
-Xcode > Preferences > Downloads > __iOS * Simulator__
 
 
 ## Browsers
@@ -34,6 +35,8 @@ Xcode > Preferences > Downloads > __iOS * Simulator__
 [Chrome Canary](https://www.google.com/intl/en/chrome/browser/canary.html)
 
 [Opera](http://www.opera.com/en/)
+
+[Opera Next](http://www.opera.com/next/)
 
 [Opera Mobile Emulator](http://www.opera.com/en/developer/mobile-emulator)
 
@@ -87,6 +90,14 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 
 ## Productivity
+
+[Раскладка Бирмана](http://ilyabirman.ru/projects/typography-layout/)  
+
+> Удаляем расладку «U.S. English» из «Мака»
+> 1. Зайти в «Язык и текст», вкладка «Источники ввода»;
+> 2. Включить раскладку Япония - «Котоэри»;
+> 3. Отключить раскладку «США»;
+> 4. Отключить раскладку «Котоэри».
 
 [nvALT](http://brettterpstra.com/projects/nvalt/)
 

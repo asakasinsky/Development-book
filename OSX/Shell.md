@@ -1,7 +1,14 @@
 # Shell
 
+Я предлагаю использовать связку iTerm + Z shell + tmux
 
-## Switch to z-shell
+iTerm — отличная замена штатному терминалу в Mac OS.  Z shell (Zsh) — замена стандартному BASH, имеет отличный автокомплит, умеет исправлять опечатки в командах, развертывает путь по первым буквам директорий. Отличная презентация на тему «Почему Z shell круче твоего шелла» лежит в закромах [SlideShare](http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692). Tmux — менеджер терминалов, проще говоря, в одном окне можно работать с несколькими терминалами одновременно. Пример: в одном  терминале связываемся с удалённым сервером по SSH, в другом работает Grunt или Gulp, а третий открыт на всякий случай, вдруг придётся сделать коммит. В моей конфигурации ещё есть место для Midnight Commander и htop. Переключаюсь между окнами по ALT + правая или левая стрелка. Размер терминалов внутри окна можно регулировать с помощью мышки.
+
+## iTerm 
+
+iTerm предлагалось установить [ранее](https://github.com/asakasinsky/Development-book/blob/master/OSX/Apps.md), самое время запустить его.
+
+## Переключимся на Z shell
 
 ```bash
 brew install zsh
@@ -14,17 +21,17 @@ which -a zsh
 > /bin/zsh
 ```
 
-Add location (/usr/local/bin/zsh) at end of /etc/shells
+Добавим путь к zsh в список остальных шеллов /etc/shells
 ```bash
 sudo nano /etc/shells
 ```
 
-Change current shell
+Сменим текущий шелл
 ```bash
 chsh -s /usr/local/bin/zsh
 ```
 
-After reboot
+После перезагрузки или логаута (можно просто закрыть iTerm и открыть его снова)
 ```bash
 echo $SHELLecho $SHELL
 
@@ -33,47 +40,42 @@ echo $SHELLecho $SHELL
 
 ```bash
 echo $ZSH_VERSION
-> 5.0.2
+> 5.0.5
 ```
 
 
-## Install Oh-my-zsh
+## Установим Oh-my-zsh
+
+[Тут](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) можно почитать о плагинах к фреймворку Oh-my-zsh
 
 ```bash
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 ```
 
-```bash
-nano ~/.zshrc
-```
 
-Add to .zshrc
-
-```bash
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="robbyrussell"
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
-plugins=(git brew git-flow osx pip sublime vagrant)
-source $ZSH/oh-my-zsh.sh
-export PATH=/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin
-```
-[ZSH Plugins](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins)
-
-[My .zshrc example](./shell/.zshrc)
-
-
-## Tmux a terminal multiplexer
+## Установим tmux
 
 ```bash
 brew install tmux
 ```
 
 
-Put [.tmux.conf](./shell/.tmux.conf)   in ~/
+## Скачаем файлы конфигурации
+
+Очень рекомендую заглянуть внутрь файлов и попытаться понять что там и как.
+```bash
+wget -O ~/.zshrc   https://raw.githubusercontent.com/asakasinsky/Development-book/master/OSX/shell/.zshrc  
+wget -O ~/.tmux.conf   https://raw.githubusercontent.com/asakasinsky/Development-book/master/OSX/shell/.tmux.conf  
+mkdir -p ~/Scripts
+wget -O ~/Scripts/tmux_work.sh   https://raw.githubusercontent.com/asakasinsky/Development-book/master/OSX/shell/Scripts/tmux_work.sh  
+```
 
 
-Put [tmux_conf.sh](./shell/tmux_conf.sh) in ~/Scripts (this script called from [.zshrc](./shell/.zshrc))
+## Запуск
 
+```bash
+. ~/.zshrc
+```
 
+Закроем все окна iTerm и откроем новое. Должно всё получиться.
 

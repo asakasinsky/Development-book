@@ -86,43 +86,6 @@ mkdir ~/Frameworks
 ln -s "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework" ~/Frameworks
 ```
 
-```bash
-curl -O http://python-distribute.org/distribute_setup.py
-python distribute_setup.py
-easy_install pip
-pip install distribute
-```
-
-Add to .bashrc Before other PATHs:
-```bash
-export PATH=/usr/local/share/python:$PATH
-
-# Python
-# This creates the functions for the wrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
-if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
-    source /usr/local/bin/virtualenvwrapper.sh
-else
-    echo "WARNING: Can't find virtualenvwrapper.sh"
-fi
-```
-
-Install virtualenv
-```bash
-pip install virtualenv
-pip install virtualenvwrapper
-```
-
-Test setup
-```bash
-mkvirtualenv test
-rmvirtualenv test
-```
-
 
 ## Install Node.js
 

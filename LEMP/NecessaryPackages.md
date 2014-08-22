@@ -1,22 +1,23 @@
 # Ставим нужные пакеты
 
-```bash  
-sudo apt-get -y install curl unzip mc htop git siege logrotate memcached supervisor build-essential gcc python-dev unattended-upgrades python-software-properties
-```
-
 ```bash 
 sudo apt-get update
+sudo apt-get upgrade
 ```
 
-```bash 
-sudo apt-get -y install software-properties-common  
+
+```bash  
+sudo apt-get -y install curl unzip mc bc htop iotop git siege logrotate memcached supervisor build-essential gcc python-dev unattended-upgrades python-software-properties
 ```
+
 
 __curl__ — утилита командной строки для взаимодействия с множеством различных серверов по множеству различных протоколов с синтаксисом URL. 
 
 __unzip__ — распаковщик файлов.
 
 __mc__ — файловый менеджер.
+
+__bc__ — Command line calculator.
 
 __htop__ — монитор процессов, заменяющий стандартную программу _top_.
 
