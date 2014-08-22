@@ -7,7 +7,6 @@ tmux new-window -t work:2
 tmux new-window -t work:3
 
 
-
 # Split second window in «work» session
 tmux split-window -dv -p 50 -t work:2.0
 tmux split-window -dh -p 50 -t work:2.1

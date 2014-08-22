@@ -3,7 +3,7 @@
 http://ubuntuforums.org/showthread.php?t=1057657
 
 ```bash  
-addgroup sftp  
+sudo addgroup sftp  
 ```
 
 Добавляем в конец /etc/ssh/sshd_config  

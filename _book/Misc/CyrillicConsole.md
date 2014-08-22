@@ -8,7 +8,6 @@ less /usr/share/i18n/SUPPORTED
 ```bash  
 sudo locale-gen ru_RU.utf8  
 sudo dpkg-reconfigure locales  
->>>>>>> draft
 ```
 
 ```bash  
