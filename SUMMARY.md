@@ -1,11 +1,11 @@
 # Summary
 
 * [OS X](OSX/README.md)
-   * [Apps](OSX/Apps.md)
-   * [OSPreferences](OSX/OSPreferences.md)
+   * [Тюнинг OS](OSX/OSPreferences.md)
+   * [Приложения](OSX/Apps.md)
    * [Shell](OSX/Shell.md)
-   * [Languages](OSX/Languages.md)
-   * [DeveloperTools](OSX/DeveloperTools.md)
+   * [Языки программирования](OSX/Languages.md)
+   * [Инструменты разработчика](OSX/DeveloperTools.md)
    * [SublimeText3](OSX/SublimeText3.md)
    * [VirtualBox](VirtualBox/README.md)
 * [VirtualBox](VirtualBox/README.md)
