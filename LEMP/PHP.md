@@ -61,3 +61,43 @@ sudo service php5-fpm {start|stop|restart|status}
 ```bash  
 ps -ef|grep php-fpm  
 ```
+
+
+
+
+====================
+```bash  
+pm.max_children = 100
+pm.start_servers = 10
+pm.min_spare_servers = 5
+pm.max_spare_servers = 15
+pm.max_requests = 1000
+```
+
+
+The configuration variable pm.max_children controls the maximum amount of FPM processes that can ever run at the same time.
+
+pm.max_children
+This value can be calculate like this :
+pm.max_children = total RAM - (500MB) / process memory.
+
+To find the average process memory, you can use this command [1]:
+
+```bash  
+ps -ylC php5-fpm --sort:rss | awk '!/RSS/ { s+=$8 } END { printf "%s\n", "Total memory used by PHP-FPM child processes: "; printf "%dM\n", s/1024 }'
+```
+
+Why 500MB ? 
+Depends of what is running on your system, but you want to keep memory for nginx (about 20MB), MySql and others services.
+
+pm.min_spare_servers and pm.max_spare_servers
+Sets the desired minimum/maximum number of idle server processes (waiting to process). If the number of 'idle' processes is less/great than this number then some children will be deleted/created. These values can be optimized for CPU with a high value and for RAM with a low value.
+
+pm.start_servers
+The number of children created on startup. Value must be between pm.min_spare_servers and pm.max_spare_servers.
+
+pm.max_requests
+We want to keep it hight to prevent server respawn. Note: If you have a memory leak in your PHP code decrease this value to recreate it quickly and free the memory.
+
+
+

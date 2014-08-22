@@ -122,6 +122,14 @@ pip install pudb
 ## Useful tools
 brew install ctags cmake imagesnap gource ghostscript imagemagick htop gnu-sed siege
 
+
+## [Xcode](https://developer.apple.com/xcode/)
+
+Xcode > Preferences > Downloads > __Command Line Tools__
+
+Xcode > Preferences > Downloads > __iOS * Simulator__
+
+
 ## Speed limit network to simulate the «bad» connection
 
 [Speed Limit](http://mschrag.github.io/)

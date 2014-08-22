@@ -66,6 +66,13 @@ sudo dpkg-reconfigure tzdata
 
 __Нехорошо всегда ходить на сервер под рутом__, [Исправим это недоразумение](../Misc/SshDisableRoot.md)
 
+ fail2ban to prevent brute force password attacks.
+sudo apt-get install fail2ban
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04
+sudo service fail2ban restart
+
+
 [**Ограничим будущих пользователей домашней папкой**](../Misc/SFTPChrooting.md)
 
 
@@ -76,6 +83,17 @@ __Swap__
 
 
 ----------------------------------
+
+## Bashrc at ssh login
+
+.bashrc is not sourced when you log in using SSH. You need to source it in your .bash_profile like this:
+
+```bash
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
+```
+
 
 ## Готовим LEMP
 

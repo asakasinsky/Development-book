@@ -1,7 +1,20 @@
 # Python 
 
 ```bash  
-sudo apt-get -y install python-dev build-essential python-mysqldb  
+sudo apt-get -y install python-dev build-essential
+```
+
+## Возможные зависимости
+
+Иногда при установке пакетов Python происходят ошибки из-за отсутствия нужных библиотек в системе. Ниже указаны библиотеки для некоторых часто используемых пакетов в Ubuntu 14.04 LTS.
+
+```bash 
+# для пакета MySQL-python
+sudo apt-get -y install python-mysqldb 
+# для пакета pycurl
+sudo apt-get -y install libcurl4-openssl-dev 
+# для пакета lxml
+sudo apt-get -y install libxml2-dev libxslt1-dev 
 ```
 
 ```bash  
@@ -9,7 +22,7 @@ sudo apt-get update && sudo apt-get install -y curl && curl https://bitbucket.or
 
 sudo easy_install pip
 
-sudo pip install virtualenv==1.10.1 # Версия указывается пока есть этот [issue](https://github.com/pypa/virtualenv/issues/524), иначе хрен что установишь из-за некорректного Setuptools  
+sudo pip install virtualenv
 ```
 
 ```bash  
