@@ -1,8 +1,8 @@
 # Summary
 
 * [OS X](OSX/README.md)
-   * [Apps](OSX/Apps.md)
    * [OSPreferences](OSX/OSPreferences.md)
+   * [Apps](OSX/Apps.md)
    * [Shell](OSX/Shell.md)
    * [Languages](OSX/Languages.md)
    * [DeveloperTools](OSX/DeveloperTools.md)
