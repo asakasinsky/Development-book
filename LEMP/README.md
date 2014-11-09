@@ -107,13 +107,11 @@ mkdir ~/workspace
 
 [Nginx](./Nginx.md)
 
-[MySQL](./Mysql.md)
+[MySQL](./MySQL.md)
 
 [PHP](./PHP.md)
 
 [Python](./Python.md)
-
-[Varnish](./Varnish.md)
 
 ## LEMP-helper
 

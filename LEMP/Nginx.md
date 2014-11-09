@@ -1,5 +1,8 @@
 ## Nginx
 
+[Единственный правильный способ установки nginx на debian с модулем, не входящим в стандартную поставку.](http://serverfault.com/a/227496)
+
+
 Добавим репозиторий NGINX:  
 ```bash  
 sudo add-apt-repository ppa:nginx/stable  
