@@ -3,9 +3,17 @@
 1. [Моё рабочее окружение на Mac](./OSX/README.md)
 2. [Настройка VirtualBox на Mac](./VirtualBox/README.md)
 3. [Установка стека решений LEMP](./LEMP/README.md)
+4. [Полезные штуки](./UsefulThings/README.md)
 
 
-[Посмотреть на GitHub Pages](http://asakasinsky.github.io/Development-book/)
+## Что нового?
+
+###### V1.2.1
+
+- Добавился раздел [«Полезные штуки»](./UsefulThings/README.md).
+- Добавлена статья о [Celery](./UsefulThings/Celery.md). Рекомендую.
+- Убраны ошибки в ссылках на статьи.
+- Убрана интеграция с Github Pages. Убрана до тех времён, когда найду нормальный инструмент для генерации страниц.
 
 ## Roadmap
 
