@@ -8,17 +8,6 @@ sudo apt-get install rabbitmq-server
 ```
 
 
-## Настройка брокера заданий
-
-По умолчанию celery соединяется с rabbitmq используя гостевой доступ. Исправим это:
-```bash
-sudo rabbitmqctl add_vhost <host>
-sudo rabbitmqctl add_user <username> <password>
-sudo rabbitmqctl set_permissions -p <host> <username> ".*" ".*" ".*"
-sudo rabbitmqctl set_user_tags <username> management
-```
-
-
 ## Хранение результатов
 
 В качестве хранилища состояний задач и результатов их выполнения можно использовать как RabbitMQ так и SQL-сервер. В конкретном примере будем использовать MySQL. Сначала создадим базу данных celery и одноимённого пользователя c помощью обычной MySQL консоли.
@@ -27,6 +16,17 @@ sudo rabbitmqctl set_user_tags <username> management
 CREATE DATABASE IF NOT EXISTS `celery` CHARACTER SET utf8;
 GRANT ALL PRIVILEGES ON `celery`.* To 'celery'@'127.0.0.1' IDENTIFIED BY 'password';
 FLUSH PRIVILEGES;
+```
+
+
+## Настройка брокера заданий
+
+По умолчанию celery соединяется с rabbitmq используя гостевой доступ. Исправим это:
+```bash
+sudo rabbitmqctl add_vhost <host>
+sudo rabbitmqctl add_user <username> <password>
+sudo rabbitmqctl set_permissions -p <host> <username> ".*" ".*" ".*"
+sudo rabbitmqctl set_user_tags <username> management
 ```
 
 
@@ -109,12 +109,12 @@ def store_page(params=None):
 
 ## Пример задачи
 
-Создаём папку пакета задач:
+Создаём папку модуля задач:
 ```bash
-mkdir -p /home/<username>/tasks
+mkdir -p /home/<username>/workspace/tasks
 ```
 
-В папке _/home/<username>/tasks_ помещаем файл <code>__init__.py</code>, распечатанный выше. Рядом помещаем файл <code>celerytasks.py</code>:
+В папке _/home/\<username\>/tasks_ помещаем файл <code>__init__.py</code>, распечатанный выше. Рядом помещаем файл <code>celerytasks.py</code>:
 ```python
 # coding: utf-8
 def fetch_page(params=None):
@@ -131,7 +131,7 @@ def store_page(params=None):
 ```
 
 
-## Запуск celery 
+## Запуск, автозапуск, остановка celery с помощью bash
 
 
 Создаём папку управляющих скриптов:
@@ -187,16 +187,13 @@ ps aux | grep celery --color
 
 Думаю, как использовать это, вопросов не возникнет. 
 
-
-## Автозапуск
-
 Автозапуск можно обеспечить если записать в <code>/etc/rc.local</code> перед <code>exit 0</code>:
 ```bash
 sleep 3s; sh '/home/<username>/workspace/start_tasks.sh'
 ```
 
 
-## Автозапуск с помощью supervisor
+## Запуск, автозапуск, остановка celery с помощью supervisor
 
 Создаём папку для хранения логов:
 ```bash
@@ -204,7 +201,7 @@ mkdir -p /home/<username>/workspace/logs
 ```
 
 
-Создадим конфигурационный файл:
+Создадим конфигурационный файл в папке проекта:
 ```bash
 nano /home/<username>/workspace/supervisor.conf
 ```
@@ -236,6 +233,7 @@ stopsignal=INT
 ```
 
 
+Создадим символическую ссылку на конфигурационный файл supervisor нашего проекта:
 ```bash
 sudo ln -s /home/<username>/workspace/supervisor.conf /etc/supervisor/conf.d/<username>.conf
 ```
@@ -285,7 +283,7 @@ nano /home/<username>/workspace/logrotate.conf
 }
 ```
 
-
+Создадим символическую ссылку на конфигурационный файл logrotate нашего проекта:
 ```bash
 sudo ln -s /home/<username>/workspace/logrotate.conf /etc/logrotate.d/<username>
 ```
