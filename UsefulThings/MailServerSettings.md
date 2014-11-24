@@ -2,9 +2,107 @@
 
 [Проверка Reverse DNS lookup](http://remote.12dt.com/)
 
+[Проверка Reverse DNS lookup](http://mxtoolbox.com/ReverseLookup.aspx)
+
 [Проверка DNS записи DKIM](http://dkimcore.org/tools/dkimrecordcheck.html)
 
 [DomainKeys, DKIM, SPF, SpamAssassin Email валидатор](http://www.brandonchecketts.com/emailtest.php)
+
+[SUPERTOOL](http://mxtoolbox.com/SuperTool.aspx)
+
+
+## Полезные ссылки
+
+[Настройка POSTFIX](http://www.maxblogs.ru/articles/nastroika-postfix)
+
+
+## Postfix — сервер MTA (англ. mail transfer agent)
+
+Установка:
+```bash
+sudo apt-get install postfix
+```
+
+Выбираем «Internet Site» и затем вводим доменное имя, закреплённое за сервером. Далее Postfix автоматически установится. Останется небольшой штрих:
+
+```bash
+sudo nano /etc/postfix/main.cf
+```
+
+Пишем доменное имя:
+```bash
+myhostname = example.com
+```
+
+Правим строку с ключом _mydestination_, отвечающим за список доменов которые будет обслуживать Postfix. В нашем случае тут останется только домен, localhost.localdomain и localhost:
+```bash
+mydestination = example.com, localhost.localdomain, localhost
+```
+
+Ключ _relayhost_ оставляем пустым. Убедитесь, что ключ _mynetworks_ содержат эту запись.
+
+```bash
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+```
+
+Ключ указывает на то, кто может отправлять почту с данного сервера. Этой записью мы разрешаем слать письма только с локальных адресов.
+
+Перезагружаем MTA:
+```bash
+sudo service postfix reload
+```
+
+
+## Mail-Forwarding
+
+Внесём изменения в DNS-записи:
+
+- создадим A-запись: 
+    - название — mail
+    - IP — IP сервера, тот, что указан в основной A-записи
+- создадим MX-запись: 
+    - имя хоста: mail.example.com. (с точкой на конце, меняем на свой домен)
+    - приоритет: 5
+
+![На примере DigitalOcean.com](../images/digitalocean-DNS.png)
+
+Откроем файл конфигурации Postfix:
+```bash
+sudo nano /etc/postfix/main.cf
+```
+
+заменим ключ alias_maps на:
+```bash
+virtual_alias_maps = hash:/etc/postfix/virtual
+```
+
+Добавим дополнительный e-mail, для этого заведём файл содержащий алиасы:
+```bash
+sudo nano /etc/postfix/virtual
+```
+
+Пример алиасов:
+```bash
+info@example.com username
+# где username - имя пользователя в системе
+# вся почта будет тут: /var/mail/username
+
+# или перенаправим почту на другой домен
+info@example.com username@gmail.com
+
+# или на несколько доменов
+info@example.com username@gmail.com,username2@gmail.com
+```
+
+Сохраним, создадим хэш:
+```bash
+postmap /etc/postfix/virtual
+```
+
+Перезагрузим MTA:
+```bash
+sudo service postfix reload
+```
 
 
 ## Reverse DNS
@@ -19,13 +117,21 @@
 
 Как и всё, что связано с DNS, изменения для записей Reverse DNS lookup пройдут не сразу, потому ждём, и через некоторое время проверяем с помощью любого онлайн-сервиса Reverse DNS lookup.
 
+__Настройка rDNS на DigitalOcean:__
+- Выбираем пункт «Droplets»
+- Выбираем нужный дроплет
+- Настройки (Settings)
+- Переименовать (Rename)
+- Вставляем новый hostname. Hostname равен домену закреплённому за этим дроплетом, типа «example.com».
+- Ждём обновления DNS.
+
 
 ## [DomainKeys Identified Mail (DKIM)](http://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)
 
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install opendkim
+sudo apt-get install opendkim opendkim-tools
 ```
 
 
@@ -128,7 +234,13 @@ dig txt mail._domainkey.your-site.ru
 Или прогнать через валидатор [валидатор](http://dkimcore.org/tools/dkimrecordcheck.html).
 
 
-Перезапускаем postfix и opendkim, проверяем. Самый простой способ — отправка письма на ящик Яндекс.Почты. Если всё верно настроено, появится зеленый бейджик «Подпись верна». Если неудачно, то в письме (Яндекс) жмём «Подробно -> Свойства письма», ищем слово dkim. Должно быть «dkim=pass». Верху есть ссылки на другие сервисы.
+Перезапускаем postfix и opendkim
+```bash
+sudo service postfix reload
+sudo service opendkim reload
+```
+
+Проверяем работу. Самый простой способ — отправка письма на ящик Яндекс.Почты. Если всё верно настроено, появится зеленый бейджик «Подпись верна». Если неудачно, то в письме (Яндекс) жмём «Подробно -> Свойства письма», ищем слово dkim. Должно быть «dkim=pass». Верху есть ссылки на другие сервисы.
 
 Помним про то, что DNS обновляется не сразу.
 
