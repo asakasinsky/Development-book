@@ -64,7 +64,7 @@ sudo service postfix reload
     - имя хоста: mail.example.com. (с точкой на конце, меняем на свой домен)
     - приоритет: 5
 
-![На примере DigitalOcean.com](../images/digitalocean-DNS.png)
+![На примере DigitalOcean.com](../Images/digitalocean-DNS.png)
 
 Откроем файл конфигурации Postfix:
 ```bash
