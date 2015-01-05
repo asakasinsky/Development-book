@@ -1,0 +1,18 @@
+{
+    "preset": "yandex",
+
+    "maximumLineLength": 80,
+    "validateLineBreaks": "LF",
+    "validateIndentation": 4,
+
+    "disallowKeywords": ["with"],
+    "disallowSpacesInsideObjectBrackets": null,
+    "disallowImplicitTypeConversion": ["string"],
+
+    "safeContextKeyword": "_this",
+
+    "excludeFiles": [
+      "test/data/**",
+      "test/rules/camel-case-options.js"
+    ]
+}
