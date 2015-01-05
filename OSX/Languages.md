@@ -1,6 +1,6 @@
 # Languages
 
-*note: everything executed from Zsh (Z Shell) context, .zlogin will be in the Bash context .bash_login, for example.*
+*note: everything executed from Zsh (Z Shell) context, .zlogin will be in the Bash context as .bash_login, for example.*
 
 
 ## RVM: Ruby Version Manager
@@ -58,9 +58,9 @@ ruby -v
 
 ## Install Python 2.7
 
-We will install Python 2.7 with _--universal, --framework_ keys.
->_**--universal**: to support 32-bit and 64-bit on OS X._
->_**--framework**: to allow interaction with OS X libraries_
+We will install Python 2.7 with _--universal, --framework_ keys.  
+>_**--universal**: to support 32-bit and 64-bit on OS X._  
+>_**--framework**: to allow interaction with OS X libraries_  
 
 In this case, these packages must be builded with _--universal_ key.
 ```bash
@@ -90,9 +90,7 @@ ln -s "/usr/local/Cellar/python/2.7.8/Frameworks/Python.framework" ~/Frameworks
 ```
 
 
-## Install Node.js
-
-[Use one of these techniques to install node and npm without having to sudo](https://gist.github.com/isaacs/579814)
+## Install Node.js, npm without «sudo»
 
 ```bash
 echo 'export PATH=$HOME/.node/bin:$PATH' >> ~/.zshrc

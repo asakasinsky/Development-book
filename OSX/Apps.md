@@ -73,7 +73,7 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 [Dash App](http://kapeli.com/dash)
 
-~~[FileZilla](https://filezilla-project.org/download.php?type=client)~~
+~~[FileZilla](https://filezilla-project.org/download.php?type=client)~~  
 [ForkLift](https://itunes.apple.com/ru/app/forklift-file-manager-ftp/id412448059)
 
 [ImageOptim](http://imageoptim.com)
@@ -94,12 +94,11 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 [nvALT Browser Extensions](http://elasticthreads.tumblr.com/post/8212672178/nvit-chrome-and-safari-extensions-for-nvalt)
 
-~~[Spark](http://www.shadowlab.org/softwares/spark.php)~~
-~~[Plain Clip Plug —  Spark plugin which removes any formatting from text which is on the clipboard.](http://www.bluem.net/files/Plain-Clip-Plug.dmg)~~
-
+~~[Spark](http://www.shadowlab.org/softwares/spark.php)~~  
+~~[Plain Clip Plug —  Spark plugin which removes any formatting from text which is on the clipboard.](http://www.bluem.net/files/Plain-Clip-Plug.dmg)~~  
 [Alfred App](http://www.alfredapp.com/)
 
-Описать свои workflows
+@TODO: Описать свои workflows
 
 
 #### My hotkeys for app lounch
@@ -117,7 +116,7 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 [Evernote without AppStore](http://www.macupdate.com/app/mac/27456/evernote)
 
-~~[XMind](http://www.xmind.net/download/)~~
+~~[XMind](http://www.xmind.net/download/)~~  
 [iThoughtsX](http://toketaware.com/ithoughtsx-faq/)
 
 [Day One](http://dayoneapp.com/)
@@ -174,15 +173,3 @@ _[TrueCrypt is still safe to use?](https://www.grc.com/misc/truecrypt/truecrypt.
 [TorBrowser](https://www.torproject.org/download/download-easy.html.en)
 
 [GPG Suite](https://gpgtools.org/)
-
-
-
-
-
-
-Get Lyrical for Mac - Free download and software reviews - CNET Download.com
-http://download.cnet.com/Get-Lyrical/3000-2141_4-78572.html
-
-
-
-

@@ -55,10 +55,10 @@ Set  «Never» _System Preferences — Energy Saver — Power Adapter tab_
 
 ## Keyboard layout
 
-[Birmans's Typography Layout](http://ilyabirman.ru/projects/typography-layout/)  
-> For russian users:
-> Удаляем расладку «U.S. English» из «Мака»
-> 1. Зайти в «Язык и текст», вкладка «Источники ввода»;
-> 2. Включить раскладку Япония - «Котоэри»;
-> 3. Отключить раскладку «США»;
-> 4. Отключить раскладку «Котоэри».
+[Birmans's Typography Layout](http://ilyabirman.ru/projects/typography-layout/)    
+> For russian users:   
+> Удаляем расладку «U.S. English» из «Мака»  
+> 1. Зайти в «Язык и текст», вкладка «Источники ввода»;  
+> 2. Включить раскладку Япония - «Котоэри»;  
+> 3. Отключить раскладку «США»;  
+> 4. Отключить раскладку «Котоэри».  
