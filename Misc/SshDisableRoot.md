@@ -49,3 +49,11 @@ ssh saturn
 ```
 
 Это лучше чем постоянно вспоминать IP серверов
+
+Bashrc at ssh login
+
+.bashrc is not sourced when you log in using SSH. You need to source it in your .bash_profile like this:
+
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi

@@ -131,69 +131,10 @@ def store_page(params=None):
 ```
 
 
-## Запуск, автозапуск, остановка celery с помощью bash
-
-
-Создаём папку управляющих скриптов:
-```bash
-mkdir -p /home/<username>/workspace
-```
-
-
-Скрипт запуска:
-```bash
-# /home/<username>/workspace/start_tasks.sh
-#!/bin/bash
-
-# Absolute path to this script
-# directory with the tasks module there
-TASKS_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-cd $TASKS_PATH
-$TASKS_PATH/config/development/env/bin/celery worker -A tasks -B  --loglevel=DEBUG &
-```
-
-
-Скрипт остановки:
-```bash
-# /home/<username>/workspace/stop_tasks.sh
-#!/bin/bash
-# Usage:
-# ./stop_tasks.sh
-# Процесс закончит текущую задачу перед завершением. Если же вы хотите закрыть
-# процессы не дожидаясь окончания выполнения задачи,
-# то воспользуйтесь следующей командой:
-# ./stop_tasks.sh immediatly
-
-IMMEDIATLY=''
-if [ "$1" = "immediatly" ]; then
-        IMMEDIATLY='-9'
-fi
-ps auxww | grep 'celery worker' | awk '{print $2}' | xargs kill $IMMEDIATLY
-
-```
-
-
-Убедиться что rabbitmq запущен можно так:
-```bash
-ps aux | grep rabbit --color
-```
-
-
-Убедиться что celery запущен можно так:
-```bash
-ps aux | grep celery --color
-```
-
-Думаю, как использовать это, вопросов не возникнет. 
-
-Автозапуск можно обеспечить если записать в <code>/etc/rc.local</code> перед <code>exit 0</code>:
-```bash
-sleep 3s; sh '/home/<username>/workspace/start_tasks.sh'
-```
-
-
 ## Запуск, автозапуск, остановка celery с помощью supervisor
+
+>> Отличный способ, так как супервизор обеспечит автостарт, перезапуск, возможность для просмотра статуса запущенных скриптов
+
 
 Создаём папку для хранения логов:
 ```bash
@@ -261,6 +202,69 @@ sudo supervisorctl stop celery
 sudo supervisorctl start all
 sudo supervisorctl stop all
 ```
+
+
+
+## Запуск, автозапуск, остановка celery с помощью bash
+
+Создаём папку управляющих скриптов:
+```bash
+mkdir -p /home/<username>/workspace
+```
+
+
+Скрипт запуска:
+```bash
+# /home/<username>/workspace/start_tasks.sh
+#!/bin/bash
+
+# Absolute path to this script
+# directory with the tasks module there
+TASKS_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+cd $TASKS_PATH
+$TASKS_PATH/config/development/env/bin/celery worker -A tasks -B  --loglevel=DEBUG &
+```
+
+
+Скрипт остановки:
+```bash
+# /home/<username>/workspace/stop_tasks.sh
+#!/bin/bash
+# Usage:
+# ./stop_tasks.sh
+# Процесс закончит текущую задачу перед завершением. Если же вы хотите закрыть
+# процессы не дожидаясь окончания выполнения задачи,
+# то воспользуйтесь следующей командой:
+# ./stop_tasks.sh immediatly
+
+IMMEDIATLY=''
+if [ "$1" = "immediatly" ]; then
+        IMMEDIATLY='-9'
+fi
+ps auxww | grep 'celery worker' | awk '{print $2}' | xargs kill $IMMEDIATLY
+
+```
+
+
+Убедиться что rabbitmq запущен можно так:
+```bash
+ps aux | grep rabbit --color
+```
+
+
+Убедиться что celery запущен можно так:
+```bash
+ps aux | grep celery --color
+```
+
+Думаю, как использовать это, вопросов не возникнет. 
+
+Автозапуск можно обеспечить если записать в <code>/etc/rc.local</code> перед <code>exit 0</code>:
+```bash
+sleep 3s; sh '/home/<username>/workspace/start_tasks.sh'
+```
+
 
 
 ## Позаботимся о логах

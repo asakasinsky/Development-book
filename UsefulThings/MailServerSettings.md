@@ -25,6 +25,12 @@ sudo apt-get install postfix
 
 Выбираем «Internet Site» и затем вводим доменное имя, закреплённое за сервером. Далее Postfix автоматически установится. Останется небольшой штрих:
 
+Если Postfix уже установлен, то перекофигурируем его:
+```
+sudo dpkg-reconfigure postfix
+```
+
+
 ```bash
 sudo nano /etc/postfix/main.cf
 ```

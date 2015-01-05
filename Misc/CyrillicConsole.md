@@ -29,5 +29,3 @@ sudo dpkg-reconfigure console-setup
 ```bash  
 sudo apt-get install console-cyrillic  
 ```
-
-Для применения настроек при старте системы в /etc/bash.bashrc в самой последней строке пишем _cyr_.

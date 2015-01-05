@@ -6,7 +6,7 @@ MariaDB прозрачно заменяет MySQL
 ```bash
 sudo apt-get install python-software-properties
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com CBCB082A1BB943DB
-sudo add-apt-repository 'deb http://ftp.osuosl.org/pub/mariadb/repo/10.0/ubuntu precise main'
+sudo add-apt-repository 'deb http://ftp.osuosl.org/pub/mariadb/repo/10.0/ubuntu trusty main'
 ```
 
 ```bash
