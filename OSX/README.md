@@ -1,4 +1,4 @@
-# How use it.
+# How to use it.
 
 If you take any step separately, then you need to consider that some of the «dependency» can be installed in the earlier steps. Homebrew, for example, installed in the first step.
 

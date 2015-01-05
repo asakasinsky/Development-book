@@ -11,11 +11,11 @@ xcode-select --install
 ## [Homebrew](http://mxcl.github.com/homebrew/)
 
 ``` bash
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 brew update
 brew tap homebrew/dupes
-brew install mc ack wget curl pkg-config  ffmpeg autoconf automake apple-gcc42 git git-flow htop mc 
+brew install mc ack wget curl pkg-config  ffmpeg autoconf automake apple-gcc42 git git-flow htop grc
 sudo ln -s /usr/local/bin/gcc-4.2 /usr/bin/gcc-4.2
 ```
 
@@ -50,9 +50,9 @@ sudo ln -s /usr/local/bin/gcc-4.2 /usr/bin/gcc-4.2
 
 ## Markdown
 
-[Marked2](http://marked2app.com), read [this page](http://markedapp.com/help/Special_Features/For_Programmers.html) for getting «Syntax Highlighting» support
+[Marked2](http://marked2app.com), read [this page](http://markedapp.com/help/Special_Features/For_Programmers.html) for getting «Syntax Highlighting» support, and select "Discount" under Processor preferences if you prefer GFM (Github Flavored Markdown) instead MultiMarkdown. See Help→Markdown Reference for information on syntax difference.
 
-[Marked Bonus Pack (I use Services and Sublime Text 2 build script)](http://support.markedapp.com/kb/how-to-tips-and-tricks/marked-bonus-pack-scripts-commands-and-bundles)
+[Marked Bonus Pack (I use Services and Sublime Text 3 build script)](http://support.markedapp.com/kb/how-to-tips-and-tricks/marked-bonus-pack-scripts-commands-and-bundles)
 
 [Markdown Service Tools](http://brettterpstra.com/projects/markdown-service-tools/)
 
@@ -73,11 +73,10 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 [Dash App](http://kapeli.com/dash)
 
-[FileZilla](https://filezilla-project.org/download.php?type=client)
+~~[FileZilla](https://filezilla-project.org/download.php?type=client)~~
+[ForkLift](https://itunes.apple.com/ru/app/forklift-file-manager-ftp/id412448059)
 
 [ImageOptim](http://imageoptim.com)
-
-[ImageAlpha](http://pngmini.com)
 
 [DiffMerge](https://sourcegear.com/diffmerge/downloads.php)
 
@@ -91,43 +90,35 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 ## Productivity
 
-[Раскладка Бирмана](http://ilyabirman.ru/projects/typography-layout/)  
-
-> Удаляем расладку «U.S. English» из «Мака»
-> 1. Зайти в «Язык и текст», вкладка «Источники ввода»;
-> 2. Включить раскладку Япония - «Котоэри»;
-> 3. Отключить раскладку «США»;
-> 4. Отключить раскладку «Котоэри».
-
 [nvALT](http://brettterpstra.com/projects/nvalt/)
 
 [nvALT Browser Extensions](http://elasticthreads.tumblr.com/post/8212672178/nvit-chrome-and-safari-extensions-for-nvalt)
 
-[Spark](http://www.shadowlab.org/softwares/spark.php)
+~~[Spark](http://www.shadowlab.org/softwares/spark.php)~~
+~~[Plain Clip Plug —  Spark plugin which removes any formatting from text which is on the clipboard.](http://www.bluem.net/files/Plain-Clip-Plug.dmg)~~
 
-[Plain Clip Plug —  Spark plugin which removes any formatting from text which is on the clipboard.](http://www.bluem.net/files/Plain-Clip-Plug.dmg)
+[Alfred App](http://www.alfredapp.com/)
+
+Описать свои workflows
 
 
-#### My hotkeys for Spark
+#### My hotkeys for app lounch
 
-```bash
+```txt
 ⌥ + 1 Chrome
 ⌥ + 2 Sublime
 ⌥ + 3 iTerm
 ⌥ + 4 Dash
-⌥ + W nvALT
-⌥ + A Chrome Canary
+⌥ + Z nvALT
 ⌥ + S Safari
-⌥ + Z Mail
-And you need install «Plain Clip Plug», for cleaning rich format text in a clipboard.
-Hotkey - ⌘+⇧+V check  «Send ⌘-V keystroke»
+⌥ + M Mail
 ```
-
 
 
 [Evernote without AppStore](http://www.macupdate.com/app/mac/27456/evernote)
 
-[XMind](http://www.xmind.net/download/)
+~~[XMind](http://www.xmind.net/download/)~~
+[iThoughtsX](http://toketaware.com/ithoughtsx-faq/)
 
 [Day One](http://dayoneapp.com/)
 
@@ -173,14 +164,25 @@ Hotkey - ⌘+⇧+V check  «Send ⌘-V keystroke»
 
 [TeamViewer](http://www.teamviewer.com/ru/download/mac.aspx)
 
-[TrueCrypt](http://www.truecrypt.org/downloads)
-
+[TrueCrypt 7.1a](http://www.truecrypt.org/downloads)
+_[TrueCrypt is still safe to use?](https://www.grc.com/misc/truecrypt/truecrypt.htm)_
 
 ## Privacy
 
 [dnscrypt-osx-client](http://opendns.github.io/dnscrypt-osx-client/)
+
 [TorBrowser](https://www.torproject.org/download/download-easy.html.en)
 
 [GPG Suite](https://gpgtools.org/)
+
+
+
+
+
+
+Get Lyrical for Mac - Free download and software reviews - CNET Download.com
+http://download.cnet.com/Get-Lyrical/3000-2141_4-78572.html
+
+
 
 

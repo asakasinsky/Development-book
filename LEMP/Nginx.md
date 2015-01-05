@@ -10,6 +10,14 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt-get -y install nginx  
 ```
 
+Добавим разрешающее правило если используется ufw:
+```
+sudo ufw app list
+sudo ufw allow "Nginx Full"
+sudo ufw disable
+sudo ufw enable
+```
+
 Убедимся, что nginx стартует при загрузке системы  
 ```bash  
 sudo update-rc.d nginx defaults  
@@ -31,6 +39,11 @@ sudo update-rc.d nginx remove
 sudo service nginx {start|stop|restart|reload|force-reload|status|configtest}  
 ```
 
+Протестировать конфигурацию
+```bash
+nginx -t
+```
+
 ## Выдаём заглушку для дефолтного сервера
 
 ```bash  
@@ -43,6 +56,7 @@ nano /etc/nginx/sites-available/default
 server {
     listen       80 default_server;
     server_name  _ ;
+    charset utf-8;
     root /var/www/placeholder ; 
     index index.html;  
 }
@@ -91,6 +105,6 @@ nano /var/www/placeholder/index.html
 ```
 
 ```bash  
-service nginx restart  
+sudo service nginx restart  
 exit  
 ```

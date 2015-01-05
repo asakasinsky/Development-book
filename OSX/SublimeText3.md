@@ -2,137 +2,98 @@
 
 ## Fonts
 
-**Inconsolata LGC** — you may download this [here](https://github.com/asakasinsky/Inconsolata-LGC) with Cyrillic gliphs, in TTF.
+**Inconsolata LGC** — you may download this [here](https://github.com/asakasinsky/Inconsolata-LGC) with Cyrillic gliphs, in TTF, Powerline patched.
 **Monaco** — out-the-box font in OS X
 
 ## My User Preference file
-
-```json
-{
-    "auto_complete_triggers":
-    [
-        {
-            "characters": "<$",
-            "selector": "text.html"
-        }
-    ],
-    "bold_folder_labels": true,
-    "caret_style": "phase",
-    "color_scheme": "Packages/User/Monokai Soda.tmTheme",
-    "draw_white_space": "all",
-    "ensure_newline_at_eof_on_save": true,
-    "fallback_encoding": "Cyrillic (Windows 1251)",
-    "file_exclude_patterns":
-    [
-        ".tags",
-        ".tags_sorted_by_file",
-        ".DS_Store"
-    ],
-    "find_selected_text": true,
-    "fold_buttons": true,
-    "folder_exclude_patterns":
-    [
-        ".svn",
-        ".git",
-        ".hg",
-        "CVS",
-        "_build",
-        "dist",
-        "build",
-        "user_guide",
-        "publish"
-    ],
-    "font_face": "Inconsolata LGC",
-    "font_options":
-    [
-        "subpixel_antialias"
-    ],
-    "font_size": 12,
-    "highlight_line": true,
-    "highlight_modified_tabs": true,
-    "ignored_packages":
-    [
-        "Sublimerge Pro",
-        "SublimePythonIDE",
-        "Markboard3",
-        "JSHint Gutter",
-        "Vintage",
-        "PhpDoc",
-        "sublime-jquery-snippets"
-    ],
-    "open_files_in_new_window": false,
-    "rulers":
-    [
-        79
-    ],
-    "soda_classic_tabs": true,
-    "soda_folder_icons": true,
-    "tab_size": 4,
-    "theme": "Soda Dark 3.sublime-theme",
-    "todo":
-    {
-        "case_sensitive": true,
-        "file_exclude_patterns":
-        [
-            "*.tags",
-            "*.tags_sorted_by_file"
-        ],
-        "folder_exclude_patterns":
-        [
-            "system",
-            "libs",
-            "lib",
-            "node_modules",
-            "build"
-        ],
-        "patterns":
-        {
-            "CHANGED": "CHANGED[\\s]*?:+(?P<changed>.*)$",
-            "FIXME": "FIXME[\\s]*?:+(?P<fixme>.*)$",
-            "NOTE": "NOTE[\\s]*?:+(?P<note>.*)$",
-            "TODO": "TODO[\\s]*?:+(?P<todo>.*)$"
-        }
-    },
-    "translate_tabs_to_spaces": false,
-    "trim_trailing_white_space_on_save": true,
-    "word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?"
-}
-
-```
+My Preferences.sublime-settings [is here](./home/Preferences.sublime-settings)
 
 ## Plugins
 
+[AutoFileName](https://github.com/BoundInCode/AutoFileName)
 
-[SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements/tree/st3)
-
-[SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild)
-
-[Git](https://github.com/kemayo/sublime-text-git)
-
-[Sublime plugin for CSScomb](https://github.com/csscomb/sublime-csscomb)
-
-[JSHint](https://github.com/uipoet/sublime-jshint)
-
-[SublimeTODO](https://github.com/dnatag/SublimeTODO)
+[AutomaticBackups](https://github.com/joelpt/sublimetext-automatic-backups)
 
 [ASCII Decorator](https://github.com/viisual/ASCII-Decorator)
 
-[Automatic Backups](https://github.com/joelpt/sublimetext-automatic-backups)
+[Color Highlighter](https://github.com/Monnoroch/ColorHighlighter)
 
-[ColorPicker](https://github.com/weslly/ColorPicker)
+[CSS3](https://github.com/y0ssar1an/CSS3)
 
-[Gist](https://github.com/condemil/Gist)
+[CSScomb](https://github.com/csscomb/sublime-csscomb)
 
 [DocBlockr](https://github.com/spadgos/sublime-jsdocs)
 
 [Emmet](https://github.com/sergeche/emmet-sublime)
 
+[Gist](https://github.com/condemil/Gist)
+
+[Git](https://github.com/kemayo/sublime-text-git)
+
 [GitGutter](https://github.com/jisaacks/GitGutter)
 
-[HTML, CSS, JavaScript and JSON code formatter](https://github.com/victorporof/Sublime-HTMLPrettify)
+[Handlebars](https://github.com/daaain/Handlebars)
+
+[HTML-CSS-JS Prettify](https://github.com/victorporof/Sublime-HTMLPrettify)
+
+[JavaScript Refactor](https://github.com/s-a/sublime-text-refactor)
+
+[JavaScriptNext - ES6 Syntax](https://github.com/Benvie/JavaScriptNext.tmLanguage)
+
+[Jedi - Python autocompletion](https://github.com/srusskih/SublimeJEDI)
+
+[Jinja2](https://github.com/mitsuhiko/jinja2-tmbundle)
+
+[JSHint Gutter](https://github.com/victorporof/Sublime-JSHint)
+
+[LESS](https://github.com/danro/Less-sublime)
+
+[MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing)
+
+[nginx](https://github.com/brandonwamboldt/sublime-nginx)
+
+[PHP-Twig](https://github.com/Anomareh/PHP-Twig.tmbundle)
+
+[PlainTasks](https://github.com/aziz/PlainTasks)
+
+[Pretty JSON](https://github.com/dzhibas/SublimePrettyJson)
+
+[Python PEP8 Autoformat](https://bitbucket.org/StephaneBunel/pythonpep8autoformat)
+
+[Rsync SSH](https://github.com/davidolrik/sublime-rsync-ssh)
+
+[Schemr](https://github.com/benweier/Schemr)
+
+[SCSS](https://github.com/MarioRicalde/SCSS.tmbundle)
+
+[Seti_UI](https://github.com/ctf0/Seti_ST3)
+
+[SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3)
+
+[SublimeLinter-jscs](https://github.com/SublimeLinter/SublimeLinter-jscs)
+
+[SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild)
 
 [SublimePythonIDE](https://github.com/JulianEberius/SublimePythonIDE)
 
-[Dark UI theme «Soda»](https://github.com/buymeasoda/soda-theme/)
+[SublimeREPL](https://github.com/wuub/SublimeREPL)
 
+[Sublimerge Pro](http://www.sublimerge.com/)
 
+[Syntax Highlighting for Sass](https://github.com/P233/Syntax-highlighting-for-Sass)
+
+[Terminal Notifier](https://github.com/alloy/terminal-notifier)
+
+[Theme - Soda](https://github.com/buymeasoda/soda-theme/)
+
+[Theme - Spacegray](http://kkga.github.io/spacegray/)
+
+[Themr](https://github.com/benweier/Themr)
+
+[TodoReview](https://github.com/jonathandelgado/SublimeTodoReview)
+
+[Typewriter](https://github.com/alehandrof/Typewriter)
+
+[Underscore.js Snippets](https://github.com/AntouanK/sublime-underscorejs-snippets)
+
+[SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)

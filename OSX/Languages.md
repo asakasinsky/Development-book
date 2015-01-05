@@ -39,13 +39,15 @@ rvm get head
 
 ```bash
 rvm requirements
-
 rvm pkg install openssl
-rvm install 1.9.3 # or rvm reinstall all --force if Ruby allready installed
+# versions
+# rvm list known
+rvm install 2.1.5 
+# or rvm reinstall all --force if Ruby allready installed
 ```
 
 ```bash
-rvm use 1.9.3 --default
+rvm use 2.1.5 --default
 ```
 
 Check:
@@ -73,17 +75,18 @@ brew install gdbm sqlite --universal
 Now we install python
 ```bash
 brew install python --universal --framework
+brew linkapps python
 ```
 
 ```bash
 . ~/.zshrc
 python --version
-> Python 2.7.6
+> Python 2.7.9
 ```
 
 ```bash
 mkdir ~/Frameworks
-ln -s "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework" ~/Frameworks
+ln -s "/usr/local/Cellar/python/2.7.8/Frameworks/Python.framework" ~/Frameworks
 ```
 
 
@@ -93,7 +96,7 @@ ln -s "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework" ~/Frameworks
 
 ```bash
 echo 'export PATH=$HOME/.node/bin:$PATH' >> ~/.zshrc
-echo 'export NODE_PATH=$HOME/.node/lib/node_modules/' >> ~/.zshrc
+echo 'export NODE_PATH=$NODE_PATH:$HOME/.node/lib/node_modules' >> ~/.zshrc
 . ~/.zshrc
 
 mkdir ~/.node
@@ -101,10 +104,22 @@ mkdir ~/node-latest-install
 cd ~/node-latest-install
 curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
 ./configure --prefix=~/.node
-make install # ok, fine, this step probably takes more than 30 seconds...
-curl https://www.npmjs.org/install.sh | sh
+make install
+
+# Important!
+ln -s ~/.node/bin/node /usr/local/bin/node
+
+node -v
+> v0.10.35
+
+. ~/.zshrc
+npm install npm -g
+npm -v
+> 2.1.17
 ```
 
+
+
 ```bash
-npm install -g grunt grunt-cli jshint yo generator-generator generator-backbone generator-webapp generator-chaplin
+npm install -g grunt grunt-cli jshint jscs yo generator-generator generator-backbone generator-webapp 
 ```

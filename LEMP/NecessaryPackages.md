@@ -7,7 +7,10 @@ sudo apt-get upgrade
 
 
 ```bash  
-sudo apt-get -y install curl unzip mc bc htop iotop git siege logrotate memcached supervisor build-essential gcc python-dev unattended-upgrades python-software-properties
+sudo apt-get -y install curl unzip mc bc htop iotop git logrotate memcached supervisor build-essential gcc python-dev unattended-upgrades python-software-properties 
+checkinstall
+
+pv
 ```
 
 

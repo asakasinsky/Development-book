@@ -2,12 +2,11 @@
 
 ```bash  
 sudo add-apt-repository ppa:ondrej/php5  
-sudo apt-get update  
-sudo apt-get upgrade  
+sudo apt-get update && sudo apt-get upgrade  
 ```
 
 ```bash  
-sudo apt-get -y install  php5-common php5-mysql php5-fpm sqlite php5-sqlite php5-cli php5-gd php5-curl php5-xdebug php5-imagick php5-intl php5-mcrypt php5-xmlrpc php5-memcached  
+sudo apt-get -y install php5-common php5-mysql php5-fpm sqlite php5-sqlite php5-cli php5-gd php5-curl php5-xdebug php5-imagick php5-intl php5-mcrypt php5-xmlrpc php5-memcached  
 ```
 
 Проверяем версию  
@@ -63,7 +62,10 @@ ps -ef|grep php-fpm
 ```
 
 
-
+Как найти загруженную конфигурацию php-fpm
+php5-fpm -i | grep php.ini
+Как найти загруженную конфигурацию php-cli
+php5 -i | grep php.ini
 
 ====================
 ```bash  

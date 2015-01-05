@@ -32,7 +32,9 @@ __PHP, Perl, Python:__
 Примечание:
 На [Digital Ocean]( https://www.digitalocean.com/?refcode=bbc4266b0488
 ) (реф. ссылка) можно апгрейдить kernel с помощью [нехитрого способа](../Misc/DOKernelUpgrade.md). 
+>> Подготовка
 
+<<<<<<< HEAD
 
 
 __Локаль__
@@ -45,36 +47,34 @@ __Временная зона__
 Для проверки выставленной временной зоны введём: 
 
 ```bash
+=======
+sudo apt-get update && sudo apt-get upgrade
+==========
+Временная зона
+>>>>>>> draft
 # получим текущую дату и время
 date
 # получим временную зону
 more /etc/timezone
-```
+==========
 
-Если результат не устраивает, то временную зону можно сменить путём:
+https://github.com/asakasinsky/Development-book/blob/master/Misc/CyrillicConsole.md
+==========
 
-```bash
-sudo dpkg-reconfigure tzdata
-```
+Ставим нужные пакеты
+https://github.com/asakasinsky/Development-book/blob/master/LEMP/NecessaryPackages.md
+==========
 
-Затем на всякий случай перезапустим _cron:_
+Swap
+https://github.com/asakasinsky/Development-book/blob/master/Misc/Swap.md
 
-```bash
-/etc/init.d/cron stop
-/etc/init.d/cron start
-```
-
-__Нехорошо всегда ходить на сервер под рутом__, [Исправим это недоразумение](../Misc/SshDisableRoot.md)
-
- fail2ban to prevent brute force password attacks.
-sudo apt-get install fail2ban
-sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04
-sudo service fail2ban restart
+Нехорошо всегда ходить на сервер под рутом, Исправим это недоразумение
+Development-book/SshDisableRoot.md at master · asakasinsky/Development-book · GitHub
+https://github.com/asakasinsky/Development-book/blob/master/Misc/SshDisableRoot.md
 
 
-[**Ограничим будущих пользователей домашней папкой**](../Misc/SFTPChrooting.md)
 
+<<<<<<< HEAD
 
 
 __Swap__
@@ -83,109 +83,99 @@ __Swap__
 
 
 ----------------------------------
+=======
+>>>>>>> draft
 
-## Bashrc at ssh login
+>> LEMP
 
-.bashrc is not sourced when you log in using SSH. You need to source it in your .bash_profile like this:
+Nginx
+https://github.com/asakasinsky/Development-book/blob/master/LEMP/Nginx.md
+==========
 
-```bash
-if [ -f ~/.bashrc ]; then
-  . ~/.bashrc
-fi
-```
+MySQL
+https://github.com/asakasinsky/Development-book/blob/master/LEMP/MySQL.md
+==========
+
+PHP
+https://github.com/asakasinsky/Development-book/blob/master/LEMP/PHP.md
+==========
+
+Python
+https://github.com/asakasinsky/Development-book/blob/master/LEMP/Python.md
+==========
 
 
-## Готовим LEMP
-
-Начнем с python-software-properties для удобного добавления репозиториев. Выполним в консоли сервера команды:
-
-[Ставим нужные пакеты](./NecessaryPackages.md)
-
-```bash 
-mkdir ~/workspace
-```
-
-[Nginx](./Nginx.md)
-
-[MySQL](./MySQL.md)
-
-[PHP](./PHP.md)
-
-[Python](./Python.md)
-
-## LEMP-helper
-
-[LEMP-helper](https://github.com/asakasinsky/LEMP-helper) — это небольшой набор инструментов для работы со стеком LEMP. В этот набор входят:
-
-- Заготовки конфигов nginx и php-fpm 
-- Создание и удаление проекта по принципу «одно приложение — один пользователь»
-    - создаётся пользователь, создаётся окружение в его домашней директории, настраивается резервное копирование, логирование, создаётся база данных, кастомные страницы ошибок и открывается доступ по SFTP
-- Удаление проекта
-
-Скачаем хелпер:
-```bash
-wget https://raw.github.com/asakasinsky/LEMP-helper/master/loader.sh && chmod +x loader.sh && ./loader.sh
-```
-
-Теперь нужно убедиться в правильности путей к php.ini и nginx
-Нужно учесть, что php для командной строки, скорее всего имеет свою отдельную версию
-
-У меня это пути:
-```bash
-/etc/php5/fpm/php.ini
-/etc/php5/cli/php.ini
-```
-
-Настройки nginx лежат обычно тут:
-```bash
-/etc/nginx/nginx.conf
-```
-
-Если у вас всё пути совпадают, можно просто запустить скрипт и он всё сделает сам:
-```bash
-cd lemp-helper
-sudo ./update_lemp_conf.sh
-```
-
-Или коректируем команды ниже исходя из своих путей
-```bash
-cp -R lemp-helper/configs/nginx/nginx-bp /etc/nginx
-mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.old
-cp -R lemp-helper/configs/nginx/nginx.conf /etc/nginx/nginx.conf
-
-mv /etc/php5/fpm/php.ini /etc/php5/fpm/php.ini.old
-cp lemp-helper/configs/php/php.ini /etc/php5/fpm/php.ini
-
-mv /etc/php5/cli/php.ini /etc/php5/cli/php.ini.old
-cp lemp-helper/configs/php/php.ini /etc/php5/cli/php.ini
-```
-
-## ЛОГИ
+>> ЛОГИ
 
 Установка Logrotate
 
-```bash
 sudo apt-get install logrotate
-```
-
 Тестируем:
-```bash
+
 logrotate
-```
-
 Настраиваем:
-```bash
+
 sudo nano /etc/logrotate.d/nginx
-```
-
 Первая строка скорее всего выглядит так:
-```bash
+
 /var/log/nginx/*.log {
-```
-
 Добавим работы logrotate, изменим эту строку:
-```bash
+
 /var/log/nginx/*.log /home/*/workspace/*/logs/*.log {
+Таким нехитрым выражением мы сообщаем logrotate о расположении логов пользователей
+
+ls -la /etc/logrotate.d
+chmod 644 /etc/logrotate.d/*
+
+sudo logrotate -d /etc/logrotasudo logrotate -d /etc/logrotate.d/likadress.logrotate
+
+```bash
+/home/likadress/logs/*.log {
+    daily
+    rotate 52
+    compress
+    delaycompress
+    notifempty
+    missingok
+    copytruncate
+    su root likadress
+}
 ```
 
-Таким нехитрым выражением мы сообщаем logrotate о расположении логов пользователей 
+
+>> Сервер почтовых рассылок
+
+https://github.com/asakasinsky/Development-book/blob/master/UsefulThings/MailServerSettings.md
+
+
+
+
+>> Мониторинг
+
+Logwatch
+https://github.com/asakasinsky/Development-book/blob/master/LEMP/Logwatch.md
+==========
+
+
+
+
+>> Безопасность
+
+==========
+Сетевой экран
+https://github.com/asakasinsky/Development-book/blob/master/LEMP/UFW.md
+
+Обнаружение вторжений 
+Tripwire
+https://github.com/asakasinsky/Development-book/blob/master/LEMP/Tripwire.md
+==========
+
+
+
+Тюнинг
+sysctl net.core.somaxconn
+поставим равным количеству worker connection
+# Теперь значение сохранится при перезагрузке системы
+echo net.core.somaxconn = 4000 >> /etc/sysctl.conf && sysctl -p
+
+
