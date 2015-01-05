@@ -76,6 +76,16 @@ Create your global ignore file [https://help.github.com/articles/ignoring-files]
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
+## SASS (SCSS)
+> Sass makes CSS fun again.   
+> Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It's translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.  
+> [https://github.com/sass/sass](https://github.com/sass/sass)  
+
+You need a Ruby installation, [see how to install Ruby & RVM here](./Languages.md)
+```bash
+gem install sass
+```
+
 ## Jshint
 > JSHint is a community-driven tool to detect errors and potential problems in JavaScript code and to enforce your team's coding conventions.  
 > [http://jshint.com/about/](http://jshint.com/about/)  
