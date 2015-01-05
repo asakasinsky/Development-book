@@ -48,7 +48,7 @@ echo $ZSH_VERSION
 
 ## Установим Oh-my-zsh
 
-[Тут](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) можно почитать о плагинах к фреймворку Oh-my-zsh
+[Тут можно почитать](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) о плагинах к фреймворку Oh-my-zsh
 
 ```bash
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh

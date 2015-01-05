@@ -2,8 +2,8 @@
 
 ## Fonts
 
-**Inconsolata LGC** — you may download this [here](https://github.com/asakasinsky/Inconsolata-LGC) with Cyrillic gliphs, in TTF, Powerline patched.
-**Monaco** — out-the-box font in OS X
+**Inconsolata LGC** — you may download this [here](https://github.com/asakasinsky/Inconsolata-LGC) with Cyrillic gliphs, in TTF, Powerline patched.  
+**Monaco** — out-the-box font in OS X  
 
 ## My User Preference file
 My Preferences.sublime-settings [is here](./home/Preferences.sublime-settings)
