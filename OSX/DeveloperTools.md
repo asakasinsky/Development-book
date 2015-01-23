@@ -143,6 +143,52 @@ My Preferences.sublime-settings [is here](./home/Preferences.sublime-settings)
 
 
 
+## Nginx
+```bash
+brew install nginx
+sudo cp /usr/local/opt/nginx/*.plist /Library/LaunchDaemons/
+sudo chown root:wheel /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
+sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
+curl -IL http://localhost:8080
+
+mkdir -p /usr/local/etc/nginx/logs
+mkdir -p /usr/local/etc/nginx/sites-available
+mkdir -p /usr/local/etc/nginx/sites-enabled
+mkdir -p /usr/local/etc/nginx/conf.d
+mkdir -p /usr/local/etc/nginx/ssl
+mkdir -p /Users/$(whoami)/Workspace
+
+```
+
+
+## Php-fpm
+```bash
+brew tap homebrew/dupes
+brew tap josegonzalez/homebrew-php
+brew install --without-apache --with-fpm --with-mysql php55
+brew install mcrypt php55-mcrypt php55-imagick php55-memcached
+
+mkdir -p ~/Library/LaunchAgents
+cp /usr/local/Cellar/php55/5.5.20/homebrew.mxcl.php55.plist ~/Library/LaunchAgents/
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
+```
+
+php.ini:  
+```bash
+/usr/local/etc/php/5.5/php.ini
+```
+
+
+## MySQL
+```bash
+brew install mysql
+ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+mysql_secure_installation
+```
+
+
+
 ## [Xcode](https://developer.apple.com/xcode/)
 
 Xcode > Preferences > Downloads > __Command Line Tools__

@@ -6,7 +6,7 @@ sudo apt-get update && sudo apt-get upgrade
 ```
 
 ```bash  
-sudo apt-get -y install php5-common php5-mysql php5-fpm sqlite php5-sqlite php5-cli php5-gd php5-curl php5-xdebug php5-imagick php5-intl php5-mcrypt php5-xmlrpc php5-memcached  
+sudo apt-get -y install php5-common php5-mysql php5-fpm sqlite php5-sqlite php5-cli php5-gd php5-curl php5-xdebug php5-imagick php5-intl php5-mcrypt php5-xmlrpc php5-memcached  php5-dev php5-xhprof
 ```
 
 Проверяем версию  
@@ -20,6 +20,12 @@ php -v
 sudo apt-get -y install php-pear  
 pear upgrade pear
  
+# Как установить PECL-расширение:
+# pecl install perl
+
+# Как удалить PECL-расширение:
+# pecl uninstall perl
+
 sudo pear channel-discover pear.phpunit.de  
 sudo pear channel-discover components.ez.no  
 sudo pear channel-discover pear.symfony.com  
@@ -101,5 +107,6 @@ The number of children created on startup. Value must be between pm.min_spare_se
 pm.max_requests
 We want to keep it hight to prevent server respawn. Note: If you have a memory leak in your PHP code decrease this value to recreate it quickly and free the memory.
 
-
+Профилирование PHP с XHprof
+http://ruhighload.com/index.php/2009/08/21/xhprof-%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-php-%D0%BE%D1%82-facebook/
 
