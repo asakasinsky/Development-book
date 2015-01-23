@@ -163,8 +163,8 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 [TeamViewer](http://www.teamviewer.com/ru/download/mac.aspx)
 
-[TrueCrypt 7.1a](http://www.truecrypt.org/downloads)
-_[TrueCrypt is still safe to use?](https://www.grc.com/misc/truecrypt/truecrypt.htm)_
+[TrueCrypt 7.1a](http://www.truecrypt.org/downloads)  
+_TrueCrypt is still safe to use? [Yes, read this.](https://www.grc.com/misc/truecrypt/truecrypt.htm)_
 
 ## Privacy
 

@@ -32,8 +32,8 @@ __PHP, Perl, Python:__
 Примечание:
 На [Digital Ocean]( https://www.digitalocean.com/?refcode=bbc4266b0488
 ) (реф. ссылка) можно апгрейдить kernel с помощью [нехитрого способа](../Misc/DOKernelUpgrade.md). 
->> Подготовка
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -52,28 +52,25 @@ sudo apt-get update && sudo apt-get upgrade
 ==========
 Временная зона
 >>>>>>> draft
+=======
+#### Обязательно обновимся
+```bash
+sudo apt-get update && sudo apt-get upgrade
+```
+
+#### Временная зона
+```bash
+>>>>>>> draft
 # получим текущую дату и время
 date
 # получим временную зону
 more /etc/timezone
-==========
-
-https://github.com/asakasinsky/Development-book/blob/master/Misc/CyrillicConsole.md
-==========
-
-Ставим нужные пакеты
-https://github.com/asakasinsky/Development-book/blob/master/LEMP/NecessaryPackages.md
-==========
-
-Swap
-https://github.com/asakasinsky/Development-book/blob/master/Misc/Swap.md
-
-Нехорошо всегда ходить на сервер под рутом, Исправим это недоразумение
-Development-book/SshDisableRoot.md at master · asakasinsky/Development-book · GitHub
-https://github.com/asakasinsky/Development-book/blob/master/Misc/SshDisableRoot.md
+# если временная зона выставлена неправильно, то
+sudo dpkg-reconfigure tzdata
+```
 
 
-
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -85,97 +82,78 @@ __Swap__
 ----------------------------------
 =======
 >>>>>>> draft
+=======
+##### [Поддержка кириллицы в консоли](../Misc/CyrillicConsole.md)
+>>>>>>> draft
 
->> LEMP
+##### [Swap](../Misc/Swap.md)
 
-Nginx
-https://github.com/asakasinsky/Development-book/blob/master/LEMP/Nginx.md
-==========
+##### [Ставим нужные пакеты](./NecessaryPackages.md)
 
-MySQL
-https://github.com/asakasinsky/Development-book/blob/master/LEMP/MySQL.md
-==========
-
-PHP
-https://github.com/asakasinsky/Development-book/blob/master/LEMP/PHP.md
-==========
-
-Python
-https://github.com/asakasinsky/Development-book/blob/master/LEMP/Python.md
-==========
+##### [Отключим вход по ssh пользователю root](../Misc/SshDisableRoot.md)
 
 
->> ЛОГИ
+## LEMP
+
+##### [Nginx](./Nginx.md)
+##### [MySQL](./MySQL.md)
+##### [PHP](./PHP.md)
+##### [Python](./Python.md)
+
+## ЛОГИ
 
 Установка Logrotate
-
-sudo apt-get install logrotate
-Тестируем:
-
-logrotate
-Настраиваем:
-
-sudo nano /etc/logrotate.d/nginx
-Первая строка скорее всего выглядит так:
-
-/var/log/nginx/*.log {
-Добавим работы logrotate, изменим эту строку:
-
-/var/log/nginx/*.log /home/*/workspace/*/logs/*.log {
-Таким нехитрым выражением мы сообщаем logrotate о расположении логов пользователей
-
-ls -la /etc/logrotate.d
-chmod 644 /etc/logrotate.d/*
-
-sudo logrotate -d /etc/logrotasudo logrotate -d /etc/logrotate.d/likadress.logrotate
-
 ```bash
-/home/likadress/logs/*.log {
+sudo apt-get install logrotate
+```
+
+Тестируем:
+```bash
+logrotate
+```
+
+Я сторонник того чтобы логи, относящиеся к пользовательскому приложению, находились в директории пользователя. Вот так:
+```bash
+/home/<USERNAME>/logs
+```
+
+Сделаем так, чтобы logrotate начал обслуживать эту директорию с логами.
+```bash
+nano /etc/logrotate.d/<USERNAME>.logrotate
+
+/home/<USERNAME>/logs/*.log {
     daily
-    rotate 52
+    rotate 7
     compress
     delaycompress
     notifempty
     missingok
     copytruncate
-    su root likadress
+    su root <USERNAME>
 }
 ```
 
+Поправим права
+```bash
+ls -la /etc/logrotate.d
+chmod 644 /etc/logrotate.d/*
+```
 
->> Сервер почтовых рассылок
-
-https://github.com/asakasinsky/Development-book/blob/master/UsefulThings/MailServerSettings.md
-
-
-
-
->> Мониторинг
-
-Logwatch
-https://github.com/asakasinsky/Development-book/blob/master/LEMP/Logwatch.md
-==========
+Протестируем созданный конфиг:
+```bash
+sudo logrotate -d /etc/logrotate.d/<USERNAME>.logrotate
+```
 
 
+## Мониторинг 
 
+##### [Logwatch](./Logwatch.md)
 
->> Безопасность
+## Безопасность
 
-==========
-Сетевой экран
-https://github.com/asakasinsky/Development-book/blob/master/LEMP/UFW.md
+##### [UFW — сетевой экран](./UFW.md)
+##### [Tripwire — контроль целостности системы](./Tripwire.md)
 
-Обнаружение вторжений 
-Tripwire
-https://github.com/asakasinsky/Development-book/blob/master/LEMP/Tripwire.md
-==========
+## Тюнинг
 
-
-
-Тюнинг
-sysctl net.core.somaxconn
-поставим равным количеству worker connection
-# Теперь значение сохранится при перезагрузке системы
-echo net.core.somaxconn = 4000 >> /etc/sysctl.conf && sysctl -p
-
-
+##### [Sysctl](./Sysctl.md)

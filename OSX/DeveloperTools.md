@@ -76,6 +76,16 @@ Create your global ignore file [https://help.github.com/articles/ignoring-files]
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
+## SASS (SCSS)
+> Sass makes CSS fun again.   
+> Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It's translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.  
+> [https://github.com/sass/sass](https://github.com/sass/sass)  
+
+You need a Ruby installation, [see how to install Ruby & RVM here](./Languages.md)
+```bash
+gem install sass
+```
+
 ## Jshint
 > JSHint is a community-driven tool to detect errors and potential problems in JavaScript code and to enforce your team's coding conventions.  
 > [http://jshint.com/about/](http://jshint.com/about/)  
@@ -130,6 +140,52 @@ My .editorconfig [is here](./home/.editorconfig)
 
 ## Sublime Text 3 Config
 My Preferences.sublime-settings [is here](./home/Preferences.sublime-settings)
+
+
+
+## Nginx
+```bash
+brew install nginx
+sudo cp /usr/local/opt/nginx/*.plist /Library/LaunchDaemons/
+sudo chown root:wheel /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
+sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
+curl -IL http://localhost:8080
+
+mkdir -p /usr/local/etc/nginx/logs
+mkdir -p /usr/local/etc/nginx/sites-available
+mkdir -p /usr/local/etc/nginx/sites-enabled
+mkdir -p /usr/local/etc/nginx/conf.d
+mkdir -p /usr/local/etc/nginx/ssl
+mkdir -p /Users/$(whoami)/Workspace
+
+```
+
+
+## Php-fpm
+```bash
+brew tap homebrew/dupes
+brew tap josegonzalez/homebrew-php
+brew install --without-apache --with-fpm --with-mysql php55
+brew install mcrypt php55-mcrypt php55-imagick php55-memcached
+
+mkdir -p ~/Library/LaunchAgents
+cp /usr/local/Cellar/php55/5.5.20/homebrew.mxcl.php55.plist ~/Library/LaunchAgents/
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
+```
+
+php.ini:  
+```bash
+/usr/local/etc/php/5.5/php.ini
+```
+
+
+## MySQL
+```bash
+brew install mysql
+ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+mysql_secure_installation
+```
 
 
 
