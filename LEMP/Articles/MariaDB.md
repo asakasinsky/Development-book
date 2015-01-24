@@ -4,6 +4,8 @@ MariaDB прозрачно заменяет MySQL
 
 [Здесь](https://downloads.mariadb.org/mariadb/repositories/) можно подсмотреть репозиторий для текущей версии ОС.
 
+[Здесь](https://tools.percona.com/wizard) есть великолепный инструмент для генерирования настроек. Он спас мне мое время.
+
 Добавим репозиторий для Ubuntu 14.01 Trusty
 ```bash
 sudo apt-get install python-software-properties

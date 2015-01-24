@@ -83,6 +83,8 @@ pm.max_requests = 1000
 ```
 
 
+#### То, что ниже - информация к размышлению
+
 The configuration variable pm.max_children controls the maximum amount of FPM processes that can ever run at the same time.
 
 pm.max_children
