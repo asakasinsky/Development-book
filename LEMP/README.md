@@ -122,4 +122,3 @@ sudo logrotate -d /etc/logrotate.d/<USERNAME>.logrotate
 ## Тюнинг
 
 ##### [Sysctl](./Articles/Sysctl.md)
-
