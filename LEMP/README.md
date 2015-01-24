@@ -53,17 +53,17 @@ sudo dpkg-reconfigure tzdata
 
 ##### [Swap](../Misc/Swap.md)
 
-##### [Ставим нужные пакеты](./NecessaryPackages.md)
+##### [Ставим нужные пакеты](./Articles/NecessaryPackages.md)
 
 ##### [Отключим вход по ssh пользователю root](../Misc/SshDisableRoot.md)
 
 
 ## LEMP
 
-##### [Nginx](./Nginx.md)
-##### [MySQL](./MySQL.md)
-##### [PHP](./PHP.md)
-##### [Python](./Python.md)
+##### [Nginx](./Articles/Nginx.md)
+##### [MariaDB](./Articles/MariaDB.md) или [MySQL](./Articles/MySQL.md)
+##### [PHP](./Articles/PHP.md)
+##### [Python](./Articles/Python.md)
 
 ## ЛОГИ
 
@@ -112,14 +112,14 @@ sudo logrotate -d /etc/logrotate.d/<USERNAME>.logrotate
 
 ## Мониторинг 
 
-##### [Logwatch](./Logwatch.md)
+##### [Logwatch](./Articles/Logwatch.md)
 
 ## Безопасность
 
-##### [UFW — сетевой экран](./UFW.md)
-##### [Tripwire — контроль целостности системы](./Tripwire.md)
+##### [UFW — сетевой экран](./Articles/UFW.md)
+##### [Tripwire — контроль целостности системы](./Articles/Tripwire.md)
 
 ## Тюнинг
 
-##### [Sysctl](./Sysctl.md)
+##### [Sysctl](./Articles/Sysctl.md)
 

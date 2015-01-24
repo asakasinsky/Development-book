@@ -1,3 +1,34 @@
+# vnStat
+установка
+sudo apt-get install vnstat
+смотрим интерфейсы
+ifconfig
+Обновляем данные по нужному интерфейсу. Первый запуск инициализирует БД по этому интерфейсу. 
+sudo vnstat -i eth0 -u
+По умолчанию демон vnStat обновляет базу данных каждые 5 минут, а «снимает» информацию с интерфейсов каждые 30 секунд.
+
+Принудительно обновить БД
+sudo vnstat -u
+Запускаем службу
+sudo service vnstat start
+
+Просмотр статистики
+
+общая
+vnstat
+по конкретному интерфейсу
+vnstat -i eth0
+По часам
+vnstat -i eth0 -h
+По дням 
+vnstat -i eth0 -d
+По неделям
+vnstat -i eth0 -w
+По месяцам
+vnstat -i eth0 -m
+В реальном времени
+vnstat -i eth0 -l
+
 # Nagios
 
 Based from:
@@ -90,9 +121,9 @@ command[check_total_procs]=/usr/lib/nagios/plugins/check_procs -w 150 -c 200
 command[check_mysql]=/usr/lib/nagios/plugins/check_mysql -d DATABASE_NAME -H 127.0.0.1 -u nagios -p NAGIOS_PASSWORD
 
 # check ^.*error
-# command[check_error_log]=/usr/bin/sudo /usr/lib/nagios/plugins/check_logwarn -d /tmp/logwarn -p /home/likadress/workspace/likadress.ru/logs/error.log ^.*error
+# command[check_error_log]=/usr/bin/sudo /usr/lib/nagios/plugins/check_logwarn -d /tmp/logwarn -p /home/<username>/workspace/logs/error.log ^.*error
 
-command[check_nginx_log]=/usr/bin/sudo /usr/lib/nagios/plugins/check_nginx_log /home/likadress/workspace/likadress.ru/logs/error.log
+command[check_nginx_log]=/usr/bin/sudo /usr/lib/nagios/plugins/check_nginx_log /home/<username>/workspace/logs/error.log
 
 ```
 
@@ -127,15 +158,15 @@ sudo service nagios3 restart && sudo service apache2 restart
 
 ### Add Client To Monitoring
 ```bash
-sudo nano /etc/nagios3/conf.d/likadress.ru.cfg
+sudo nano /etc/nagios3/conf.d/example.com.cfg
 
 
 
 define host {
     use                     generic-host
-    host_name               likadress
+    host_name               my-server
     hostgroups              http-servers
-    alias                   likadress.ru
+    alias                   example.com
     address                 88.198.200.80
     check_period 24x7
     notification_interval 60
