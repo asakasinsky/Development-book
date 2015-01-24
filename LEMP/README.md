@@ -33,7 +33,7 @@ __PHP, Perl, Python:__
 На [Digital Ocean]( https://www.digitalocean.com/?refcode=bbc4266b0488
 ) (реф. ссылка) можно апгрейдить kernel с помощью [нехитрого способа](../Misc/DOKernelUpgrade.md). 
 
-#### Обязательно обновимся
+#### Обязательно нужно обновиться
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
