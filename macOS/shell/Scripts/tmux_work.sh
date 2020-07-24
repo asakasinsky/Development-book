@@ -11,7 +11,7 @@ tmux new-window -t work:3
 tmux split-window -dv -p 50 -t work:2.0
 tmux split-window -dh -p 50 -t work:2.1
 
-tmux send-keys -t work:1. 'cd ~/Workspace/;mc' C-m
+tmux send-keys -t work:1. 'cd ~/Workspace/ && mc' C-m
 
 tmux send-keys -t work:2.1 'uptime' C-m
 tmux send-keys -t work:2.2 'cd ~/Workspace/' C-m
