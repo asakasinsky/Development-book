@@ -91,6 +91,7 @@ nvm install
 nvm exec
 nvm run
 nvm which
+nvm debug
 ```
 
 
