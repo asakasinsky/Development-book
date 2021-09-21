@@ -111,15 +111,15 @@ mysqlx_bind_address                   = 127.0.0.1
 ```
 
 
-Настройка MySQL
-https://www.hostcms.ru/documentation/server/mysql/
-Настройка MySQL: часто встречающиеся ошибки
-https://netpoint-dc.com/blog/mysql-chastie-oshibki-nastroiki/
+Настройка MySQL  
+https://www.hostcms.ru/documentation/server/mysql/  
+Настройка MySQL: часто встречающиеся ошибки  
+https://netpoint-dc.com/blog/mysql-chastie-oshibki-nastroiki/  
 
-101 Tips to MySQL Tuning and Optimization
-https://www.monitis.com/blog/101-tips-to-mysql-tuning-and-optimization/
-MySQL Performance Cheat Sheet | Severalnines
-https://severalnines.com/database-blog/mysql-performance-cheat-sheet
-How to optimize MySQL 8 servers and clients | Packt Hub
-https://hub.packtpub.com/optimize-mysql-8-servers-clients/
+101 Tips to MySQL Tuning and Optimization  
+https://www.monitis.com/blog/101-tips-to-mysql-tuning-and-optimization/  
+MySQL Performance Cheat Sheet | Severalnines  
+https://severalnines.com/database-blog/mysql-performance-cheat-sheet  
+How to optimize MySQL 8 servers and clients | Packt Hub  
+https://hub.packtpub.com/optimize-mysql-8-servers-clients/  
 
