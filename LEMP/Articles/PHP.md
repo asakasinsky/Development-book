@@ -1,103 +1,157 @@
-# PHP
 
-```bash  
-sudo add-apt-repository ppa:ondrej/php5  
-sudo apt-get update && sudo apt-get upgrade  
+# PHP For Ubuntu >= 18.04
+
+The main PPA for supported PHP versions with many PECL extensions  
+https://launchpad.net/~ondrej/+archive/ubuntu/php  
+
+```bash
+# WARNING: add-apt-repository is broken with non-UTF-8 locales, see https://github.com/oerdnj/deb.sury.org/issues/56 for workaround:
+sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
+sudo apt update
+## !!! Апгрейд не проводим !!!
 ```
 
-```bash  
-sudo apt-get -y install php5-common php5-mysql php5-fpm sqlite php5-sqlite php5-cli php5-gd php5-curl php5-xdebug php5-imagick php5-intl php5-mcrypt php5-xmlrpc php5-memcached  php5-dev php5-xhprof
+```bash
+## Устанавливаем PHP 7.2
+#
+# PHP: Миграция из PHP 5.6.x к PHP 7.0.x - Manual
+# https://php.net/manual/ru/migration70.php
+# PHP: Миграция с PHP 7.0.x на PHP 7.1.x - Manual
+# https://php.net/manual/ru/migration71.php
+# PHP: Миграция с PHP 7.1.x на PHP 7.2.x - Manual
+# https://php.net/manual/ru/migration72.php
+# PHP: Миграция с PHP 7.2.x на PHP 7.3.x - Manual
+# https://php.net/manual/ru/migration73.php
+# PHP: Миграция с PHP 7.3.x на PHP 7.4.x - Manual
+# https://www.php.net/manual/ru/migration74.php
+
+sudo apt install php7.2 php7.2-fpm php7.2-cli php7.2-common php7.2-json php7.2-opcache php7.2-readline
+sudo apt upgrade
+sudo apt autoremove
+
+php -v
+
+
+
+# Если запущен сервис php7.2-fpm
+sudo systemctl {start|stop|status} php7.2-fpm
+# то выключаем его
+sudo systemctl stop php-fpm
+#  выключаем его
+sudo systemctl start php7.2-fpm
 ```
 
-Проверяем версию  
-```bash  
-php -v  
+Проверяем версию
+```bash
+php -v
 ```
 
-Ставим по желанию PEAR и PHPUnit...  
 
-```bash  
-sudo apt-get -y install php-pear  
-pear upgrade pear
- 
-# Как установить PECL-расширение:
-# pecl install perl
-
-# Как удалить PECL-расширение:
-# pecl uninstall perl
-
-sudo pear channel-discover pear.phpunit.de  
-sudo pear channel-discover components.ez.no  
-sudo pear channel-discover pear.symfony.com  
-sudo pear install --alldeps phpunit/PHPUnit  
+```
+sudo apt install php-pear php-imagick php-memcached php-amqp sqlite3 php7.2-curl php7.2-gd php7.2-imap php7.2-intl php7.2-json php7.2-ldap php7.2-mbstring php7.2-mysql php7.2-opcache php7.2-pspell php7.2-readline php7.2-soap php7.2-xml php7.2-zip php7.2-dev php7.2-sqlite3 php7.2-xmlrpc php7.2-xsl php7.2-bcmath
 ```
 
-... или Composer (глобально, на уровне системы; команда «composer» вместо локального «php composer.phar» )
-> Сейчас есть тенденция использовать Composer вместо PEAR. У меня пока нет сложившегося мнения какой менеджер лучше, замечу только что Composer устанавливает зависимости локально в проекте а не глобально на уровне всей системы
+PHPSTORM XDEBUG ubuntu NGINX php7.2-fpm  
+https://gist.github.com/me7media/6291827bb44b7e90e905ff8bdda8182e  
+longxinH/xhprof: PHP7 support  
+https://github.com/longxinH/xhprof  
+Профилирование PHP7 кода с использованием xhprof  
+http://codengineering.ru/post/43   
+
+
+Ставим Composer (глобально, на уровне системы; команда «composer» вместо локального «php composer.phar» )
 
 ```bash
 curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+Обновление Composer
+```bash
+composer self-update
+```
+
+Немного безопасности
+
+```bash
+sudo nano /etc/php/7.2/fpm/php.ini
+
+# В текстовом редакторе открываем php.ini
+# Меняем **;cgi.fix_pathinfo=1** на **cgi.fix_pathinfo=0**
+sudo nano /etc/php/7.2/fpm/php.ini
+
+# или делаем это простой командой замены текста через sed
+sudo sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/" /etc/php/7.2/fpm/php.ini
+
 ```
 
 
-Убедимся, что php5-fpm стартует при загрузке системы  
-```bash  
-sudo update-rc.d php5-fpm defaults  
+Рестарт php
+
+```bash
+sudo systemctl restart php7.2-fpm
 ```
 
-Если появится сообщение вроде этого:  
-```bash  
-System start/stop links for /etc/init.d/php5-fpm already exist.  
+
+Управление php7.2-fpm
+```bash
+sudo systemctl {start|stop|restart|status} php7.2-fpm
+```
+Поверка работы php-fpm (вывод процессов)
+```bash
+ps -ef|grep php-fpm
 ```
 
-значит php5-fpm настроен на запуск при загрузке
-
-Подобным образом можно отключить автозапуск  
-```bash  
-sudo update-rc.d php5-fpm remove  
+Проверка конфигов:
+```bash
+php-fpm7.2 -t
 ```
-
-Управление php5-fpm  
-```bash  
-sudo service php5-fpm {start|stop|restart|status}  
-```  
-Поверка работы php5-fpm (вывод процессов)  
-```bash  
-ps -ef|grep php-fpm  
-```
-
 
 Как найти загруженную конфигурацию php-fpm
-php5-fpm -i | grep php.ini
+php-fpm7.2 -i | grep php.ini
 Как найти загруженную конфигурацию php-cli
-php5 -i | grep php.ini
+php7.2 -i | grep php.ini
 
-====================
-```bash  
-pm.max_children = 100
-pm.start_servers = 10
-pm.min_spare_servers = 5
-pm.max_spare_servers = 15
-pm.max_requests = 1000
-```
+
 
 
 #### То, что ниже - информация к размышлению
 
-The configuration variable pm.max_children controls the maximum amount of FPM processes that can ever run at the same time.
+```
+ps -ylC php-fpm7.2 --sort:rss | awk '!/RSS/ { s+=$8 } END { printf "%s\n", "Total memory used by PHP-FPM child processes: "; printf "%dM\n", s/1024 }'
 
-pm.max_children
-This value can be calculate like this :
-pm.max_children = total RAM - (500MB) / process memory.
+free -m
 
-To find the average process memory, you can use this command [1]:
-
-```bash  
-ps -ylC php5-fpm --sort:rss | awk '!/RSS/ { s+=$8 } END { printf "%s\n", "Total memory used by PHP-FPM child processes: "; printf "%dM\n", s/1024 }'
+5967-(1500+768)/400
+3699/300=12,33
 ```
 
-Why 500MB ? 
+PHP: Настройка - Manual
+http://php.net/manual/ru/install.fpm.configuration.php
+
+Оптимизация PHP-FPM: Используем ‘pm static’ для максимальной производительности
+http://phpprofi.ru/blogs/post/70
+
+Настраиваем php-fpm · Блог Новикова Богдана
+https://hcbogdan.com/php/2016/09/16/php-fpm-dynamic/
+
+
+
+
+The configuration variable pm.max_children controls the maximum amount of FPM processes that can ever run at the same time.
+```
+pm.max_children
+This value can be calculate like this :
+pm.max_children = (total RAM - (500MB) )/ process memory.
+```
+ 
+To find the average process memory, you can use this command [1]:
+
+```bash
+ps -ylC php-fpm7.2 --sort:rss | awk '!/RSS/ { s+=$8 } END { printf "%s\n", "Total memory used by PHP-FPM child processes: "; printf "%dM\n", s/1024 }'
+```
+
+Why 500MB ?
 Depends of what is running on your system, but you want to keep memory for nginx (about 20MB), MySql and others services.
 
 pm.min_spare_servers and pm.max_spare_servers
@@ -111,4 +165,3 @@ We want to keep it hight to prevent server respawn. Note: If you have a memory l
 
 Профилирование PHP с XHprof
 http://ruhighload.com/index.php/2009/08/21/xhprof-%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-php-%D0%BE%D1%82-facebook/
-
