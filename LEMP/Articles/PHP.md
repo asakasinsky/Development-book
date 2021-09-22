@@ -59,6 +59,8 @@ https://github.com/longxinH/xhprof
 http://codengineering.ru/post/43   
 
 
+## Composer
+
 Ставим Composer (глобально, на уровне системы; команда «composer» вместо локального «php composer.phar» )
 
 ```bash
